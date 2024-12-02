@@ -8,13 +8,13 @@ A motivational blog created by me! This is my first step into the exciting world
 
 ## 📋 Table of Contents
 1. [📖**About the Project**](#-about-the-project)
-2. [Features](#-features)
-3. [Technologies Used](#technologies-used)
-4. [Getting Started](#getting-started)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Contact](#contact)
-8. [Future Enhancements](#future-enhancements)
+2. [✨**Features**](#-features)
+3. [🛠️**Technologies Used**](#-technologies-used)
+4. [🚀**Getting Started**](#-getting-started)
+5. [🤝**Contributing**](#-contributing)
+6. [📜**License**](#-license)
+7. [📧**Contact**](#-contact)
+8. [🌟**Future Enhancements**](#-future-enhancements)
 
 ---
 
