@@ -26,13 +26,14 @@ This project is a simple motivational blog designed to:
 - Showcase creativity through design and styling.
 
 It’s a part of my learning journey with **Devslopes**, where I'm building my skills in **HTML**, **CSS**, and **JavaScript**.
+This specifically was a project in the HTML 101 Course that I altered and got carried away with lol
 
 ---
 
 ## ✨ Features
 - Motivational content to brighten your day!
-- Clean and minimalistic design.
-- Fully responsive for desktop and mobile viewing.
+- Clean, Fun, Bold and Bright design.
+- (Hopefully) Fully responsive for desktop and mobile viewing.
 - Hosted live on GitHub Pages.
 
 ---
@@ -40,7 +41,7 @@ It’s a part of my learning journey with **Devslopes**, where I'm building my s
 ## 🛠️ Technologies Used
 - **HTML**: Structuring the web page content.
 - **CSS**: Adding styles for aesthetics and layout.
-- **JavaScript**: For interactive features (planned for future updates).
+- **JavaScript**: For interactive features (more planned for future updates).
 - **GitHub Pages**: Hosting the live website.
 
 ---
