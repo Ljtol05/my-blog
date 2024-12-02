@@ -268,21 +268,30 @@ footer .social-links a svg {
   header {
     padding: 10px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
   }
   .nav-links {
     background: rgba(0, 0, 0, 0.8);
     flex-direction: column; /* Stack navigation links */
     gap: 10px; /* Reduce spacing between links */
+    width: 100%;
+    box-sizing: border-box;
   }
   .nav-links a {
     font-size: 1rem; /* Slightly smaller text size for links */
     padding: 15px 20px;
     display: block;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.1); /* Subtle hoverable background */
   }
   #dynamicGreeting {
     font-size: 1.6rem; /* Adjust font size for smaller screens */
+    text-align: center;
+    width: 100%
+    margin: 0 auto;
   }
 
   h2 {
