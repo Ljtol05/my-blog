@@ -240,8 +240,7 @@ footer .social-links a svg {
   font-weight: bold; /* Make it stand out */
   margin: 0 auto; /* Remove default margins */
   letter-spacing: 2px; /* Add spacing between letters */
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 
-               0 0 20px rgba(0, 212, 255, 0.6); /* Neon glow effect */
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5);
 }
 
 /* Responsive Design */
@@ -249,11 +248,12 @@ footer .social-links a svg {
   header {
     padding: 15px;
   }
-  header h1 {
-    font-size: 2.5rem; /* Adjust title size for smaller screens */
-  }
   .nav-links {
     flex-direction: column; /* Stack links vertically */
     align-items: center;
+    gap: 10px;
+  }
+  .featured-image {
+    max-width: 100%;
   }
 }
