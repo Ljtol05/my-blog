@@ -236,9 +236,9 @@ footer .social-links a svg {
 #dynamicGreeting {
   font-family: 'Bebas Neue', sans-serif; /* Creative font */
   color: #00d4ff; /* Electric blue color */
-  font-size: 3rem; /* Adjust font size */
+  font-size: 2rem; /* Adjust font size */
   font-weight: bold; /* Make it stand out */
-  margin: 0; /* Remove default margins */
+  margin: 0 auto; /* Remove default margins */
   letter-spacing: 2px; /* Add spacing between letters */
   text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 
                0 0 20px rgba(0, 212, 255, 0.6); /* Neon glow effect */
