@@ -24,9 +24,9 @@ This project is a simple motivational blog designed to:
 - Share uplifting and inspiring messages.
 - Explore and practice foundational web development concepts.
 - Showcase creativity through design and styling.
-
-It’s a part of my learning journey with **Devslopes**, where I'm building my skills in **HTML**, **CSS**, and **JavaScript**.
-This specifically was a project in the HTML 101 Course that I altered and got carried away with lol
+### Additional Info
+- It’s a part of my learning journey with **Devslopes**, where I'm building my skills in **HTML**, **CSS**, and **JavaScript**.
+- This specifically was a project in the HTML 101 Course that I altered and got carried away with lol
 
 ---
 
