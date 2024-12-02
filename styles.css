@@ -251,26 +251,28 @@ footer .social-links a svg {
     text-align: center;
   }
   #dynamicGreeting {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
   }
   .nav-links {
+    background: rgba(0, 0, 0, 0.8);
     flex-direction: column; /* Stack navigation links */
     gap: 10px; /* Reduce spacing between links */
   }
   .nav-links a {
     font-size: 1rem; /* Slightly smaller text size for links */
-    padding: 8px; /* Adjust padding for compactness */
+    padding: 15px 20px; /* Bigger touch area */
+    display: block; /* Make links full width */
   }
 
   /* Content Section Adjustments */
   section {
-    width: 95%; /* Take more screen width on small devices */
+    width: 100%; /* Take more screen width on small devices */
     margin: 10px auto; /* Reduce margins for better fit */
-    padding: 15px; /* Adjust padding for smaller screens */
+    padding: 5px 0; /* Adjust padding for smaller screens */
   }
 
   h2 {
-    font-size: 1.8rem; /* Reduce heading size */
+    font-size: 1.5rem; /* Reduce heading size */
   }
 
   article {
@@ -285,6 +287,7 @@ footer .social-links a svg {
   .featured-image {
     max-width: 100%; /* Make images responsive */
     height: auto;
+    margin: 10px auto;
   }
 
   /* Blockquote Adjustments */
@@ -305,11 +308,11 @@ footer .social-links a svg {
 
   /* Scroll to Top Button */
   #scrollToTopBtn {
-    width: 40px; /* Adjust button size */
-    height: 40px;
+    width: 35px; /* Adjust button size */
+    height: 35px;
     font-size: 1.5rem;
-    bottom: 15px;
-    right: 15px;
+    bottom: 10px;
+    right: 10px;
   }
 }
 
