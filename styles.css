@@ -167,6 +167,7 @@ blockquote:hover {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0; /* Reset height */
     overflow: hidden;
+    border-radius: 8px;
 }
 .iframe-container iframe {
     position: absolute;
@@ -175,6 +176,7 @@ blockquote:hover {
     width: 100%; /* Scale to fit container */
     height: 100%; /* Scale to fit container */
     border: none; /* Remove default border */
+    border-radius: 8px;
 }
 
 /* Footer Styling */
