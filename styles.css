@@ -245,13 +245,21 @@ footer .social-links a svg {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
+  /* Background Overlay for Mobile */
+    body {
+        background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent dark overlay */
+    }
+ /* Section Full Width */
+    section {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: rgba(255, 255, 255, 0.9); /* White semi-transparent background */
+    }
   /* Header Adjustments */
   header {
     padding: 10px;
     text-align: center;
-  }
-  #dynamicGreeting {
-    font-size: 1.6rem; /* Adjust font size for smaller screens */
   }
   .nav-links {
     background: rgba(0, 0, 0, 0.8);
@@ -260,15 +268,13 @@ footer .social-links a svg {
   }
   .nav-links a {
     font-size: 1rem; /* Slightly smaller text size for links */
-    padding: 15px 20px; /* Bigger touch area */
-    display: block; /* Make links full width */
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Subtle hoverable background */
   }
-
-  /* Content Section Adjustments */
-  section {
-    width: 100%; /* Take more screen width on small devices */
-    margin: 10px auto; /* Reduce margins for better fit */
-    padding: 5px 0; /* Adjust padding for smaller screens */
+  #dynamicGreeting {
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
   }
 
   h2 {
@@ -279,8 +285,10 @@ footer .social-links a svg {
     padding: 15px;
   }
   article p {
+    color: #333
     font-size: 1rem; /* Reduce text size for readability */
     line-height: 1.6; /* Adjust line spacing */
+    padding: 10px
   }
 
   /* Featured Image Adjustments */
@@ -310,7 +318,6 @@ footer .social-links a svg {
   #scrollToTopBtn {
     width: 35px; /* Adjust button size */
     height: 35px;
-    font-size: 1.5rem;
     bottom: 10px;
     right: 10px;
   }
