@@ -161,12 +161,20 @@ blockquote:hover {
   transition: all 0.3s ease-in-out; /* Smooth hover transition */
 }
 
-iframe {
-  display: block;
-  margin: 0 auto;
-  border: none; /* Remove default border */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+.iframe-container {
+    position: relative;
+    width: 100%; /* Full width of parent */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0; /* Reset height */
+    overflow: hidden;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Scale to fit container */
+    height: 100%; /* Scale to fit container */
+    border: none; /* Remove default border */
 }
 
 /* Footer Styling */
