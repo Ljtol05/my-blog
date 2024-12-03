@@ -161,25 +161,19 @@ blockquote:hover {
   transition: all 0.3s ease-in-out; /* Smooth hover transition */
 }
 
-.iframe-container {
-    position: relative;
-    width: 100%; /* Full width of parent */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0; /* Reset height */
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Scale to fit container */
-    height: 100%; /* Scale to fit container */
-    border: none; /* Remove default border */
-    border-radius: 8px;
+.video-thumbnail img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: transform 0.3s ease;
 }
 
+.video-thumbnail img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 /* Footer Styling */
 footer {
   text-align: center;
