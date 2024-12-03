@@ -1,17 +1,12 @@
 // Read More Button Functionality
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const readMoreBtns = document.querySelectorAll('.read-more-btn');
-    
+
     readMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const content = this.previousElementSibling;
-            if (content.style.display === "none") {
-                content.style.display = "inline";
-                this.textContent = "Read Less";
-            } else {
-                content.style.display = "none";
-                this.textContent = "Read More";
-            }
+        btn.addEventListener('click', () => {
+            const content = btn.previousElementSibling;
+            const isExpanded = content.classList.toggle('expanded');
+            btn.textContent = isExpanded ? "Read Less" : "Read More";
         });
     });
 });
