@@ -3,17 +3,11 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-body {
   background-image: url('blog.jpg'); 
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  margin: 0; 
-  padding: 0;
-  overflow-x: hidden;
 }
 
 /* Header styling */
@@ -175,6 +169,7 @@ blockquote:hover {
     height: 0 !important; /* Reset height */
     overflow: hidden !important; /* Prevent overflow issues */
     border-radius: 10px !important; /* Optional: Rounded corners */
+    box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Optional: Add a shadow */
 }
 
