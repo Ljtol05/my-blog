@@ -168,6 +168,7 @@ blockquote:hover {
     height: 0; /* Reset height */
     overflow: hidden;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .iframe-container iframe {
     position: absolute;
