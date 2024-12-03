@@ -32,29 +32,39 @@ scrollToTopBtn.addEventListener('click', function() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 });
 
-// Lazy Loading Script
 document.addEventListener("DOMContentLoaded", function() {
-    const lazyImages = document.querySelectorAll('img.lazy');
+    if ('IntersectionObserver' in window) {
+        console.log("Using IntersectionObserver for lazy loading.");
+        
+        const lazyImages = document.querySelectorAll('img.lazy');
 
-    const lazyLoad = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                observer.unobserve(img);
-            }
+        const lazyLoad = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(lazyLoad, {
+            rootMargin: "0px 0px 50px 0px",
+            threshold: 0.01
         });
-    };
 
-    const observer = new IntersectionObserver(lazyLoad, {
-        rootMargin: "0px 0px 50px 0px",
-        threshold: 0.01
-    });
-
-    lazyImages.forEach(img => {
-        observer.observe(img);
-    });
+        lazyImages.forEach(img => observer.observe(img));
+    } else {
+        // Fallback for browsers that do not support IntersectionObserver
+        console.log("IntersectionObserver not supported. Loading all images immediately.");
+        
+        const lazyImages = document.querySelectorAll('img.lazy');
+        lazyImages.forEach(img => {
+            img.src = img.dataset.src; // Load the actual image
+            img.classList.remove('lazy'); // Remove lazy class
+        });
+    }
 });
 
 // Dynamic Greeting Script
