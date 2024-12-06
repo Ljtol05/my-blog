@@ -1,0 +1,30 @@
+footer {
+  text-align: center;
+  background: $background-color;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+  .social-links {
+    margin-top: 10px;
+
+    a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: $primary-color;
+        transition: transform 0.3s ease, fill 0.3s ease;
+
+        &:hover {
+          transform: scale(1.5);
+          fill: white;
+        }
+      }
+    }
+  }
+}
