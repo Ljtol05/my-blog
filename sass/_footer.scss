@@ -1,6 +1,8 @@
+@use './variables';
+
 footer {
   text-align: center;
-  background: $background-color;
+  background: variables.$background-color;
   color: white;
   padding: 20px;
   margin-top: 20px;
@@ -17,7 +19,7 @@ footer {
       svg {
         width: 30px;
         height: 30px;
-        fill: $primary-color;
+        fill: variables.$primary-color;
         transition: transform 0.3s ease, fill 0.3s ease;
 
         &:hover {

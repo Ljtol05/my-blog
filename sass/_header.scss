@@ -1,10 +1,12 @@
+@use './variables';
+
 header {
-  background-color: $background-color;
-  color: $primary-color;
+  background-color: variables.$background-color;
+  color: variables.$primary-color;
   text-align: center;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: $box-shadow-light;
+  box-shadow: variables.$box-shadow-light;
   margin-bottom: 20px;
 
   .nav-links {
@@ -15,9 +17,9 @@ header {
 
     a {
       text-decoration: none;
-      color: $primary-color;
+      color: variables.$primary-color;
       font-size: 1.2rem;
-      font-family: $font-family-heading;
+      font-family: variables.$font-family-heading;
       padding: 8px 15px;
       border: 2px solid transparent;
       border-radius: 5px;
@@ -26,7 +28,7 @@ header {
       &:hover {
         background-color: rgba(255, 255, 255, 0.2);
         color: white;
-        border-color: $primary-color;
+        border-color: variables.$primary-color;
       }
 
       &:active {

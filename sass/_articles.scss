@@ -1,34 +1,36 @@
+@use './variables';
+
 article {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 20px;
   margin: 20px 0;
-  box-shadow: $box-shadow-light;
+  box-shadow: variables.$box-shadow-light;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: $box-shadow-heavy;
+    box-shadow: variables.$box-shadow-heavy;
   }
 
   p {
-    font-family: $font-family-base;
+    font-family: variables.$font-family-base;
     font-size: 1.2rem;
     line-height: 1.8;
     color: #000000;
 
     strong {
-      color: $primary-color;
+      color: variables.$primary-color;
     }
 
     em {
-      color: $secondary-color;
+      color: variables.$secondary-color;
       font-style: italic;
     }
   }
 
   a {
-    color: $primary-color;
+    color: variables.$primary-color;
     text-decoration: none;
     font-weight: bold;
 
