@@ -5,108 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My Blog Page">
     <meta name="keywords" content="blog, posts, articles">
-    <meta name="author" content="Lamon Tolbert Jr">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <title>My Blog Page</title>
 </head>
 <body>
-    <header>
-        <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
-        <nav class="nav-links">
-          <a href="index.html">Blog</a>
-          <a href="hometown.html">Home Town</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    
+  <header>
+    <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+            <a href="blog.html">Blog</a>
+            <div class="dropdown-content">
+                <a href="sub-directory/ellen_blog.html">Ellen Blog</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
     <hr>
 
-    <!-- Blog Content -->
+    <!-- Main Content -->
     <main>
-        <!-- Section 1 -->
+        <!-- Introduction Section -->
         <section>
-            <h2>Introduction</h2>
+            <h2>Welcome to My Blog</h2>
             <article>
                 <p>
-                    <strong>Welcome</strong> to my blog! In this post, I'll share the incredible story of my time on the <em>Ellen Show</em>, hoping to inspire and motivate you. Blogging is my way of sharing meaningful <em>thoughts</em> and <strong>ideas</strong> with the world.
+                    <strong>Hello!</strong> I'm [Your Name], a passionate blogger who loves to share thoughts and ideas with the world. On this blog, you'll find a variety of posts about my experiences, interests, and insights.
                 </p>
-                <p class="read-more-content">
-                    <strong>It's incredible to think about</strong>, but when I was granted this amazing opportunity, I was still in highschool grinding away at my <em>football</em> career. This once-in-a-lifetime experience truly opened my eyes and deepened my faith in God. I saw it not just as a blessing, but as a miracle.
-                </p>    
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-                <img src="Ellen-placeholder.jpg" data-src="images/Ellen.jpg" alt="Me on the Ellen Show" class="featured-image lazy" loading="lazy">
+                <p>
+                    <em>Feel free to explore</em> and read through my posts. I hope you find something that resonates with you. Thank you for visiting!
+                </p>
+                <button class="read-more-btn">Read More</button>
+                <img src="images/featured-image.jpg" alt="Featured Image" class="featured-image">
             </article>
         </section>
-    
 
-        <!-- Section 2 -->
-<section>
-    <h2>Featured Content</h2>
-    <article>
-        <p>
-            Want to witness a once-in-a-lifetime moment that went viral? Check out the <strong>life-changing experience</strong> I had on the <em>Ellen Show</em>! From Nashville to Burbank, this journey has inspired thousands, and now, it’s your turn to feel the magic.
-        </p>
-        <p class="read-more-content">
-            From this, I learned that once-in-a-lifetime <strong>experiences</strong> aren't meant to simply pass us by. What I mean is, when you encounter a moment like this, take the time to truly sit with it—soak up every bit of knowledge and growth it offers. Let these moments shape the way you approach life and <em>inspire</em> your journey forward.
-        </p>
-        <button class="read-more-btn">Read More</button>
-        
-        <blockquote>"Success isn't owned, it's leased, and rent is due every day." - J.J Watt</blockquote>
-        <div class="iframe-container">
-            <iframe
-                src="https://www.youtube.com/embed/EOzz48ZHQzw"
-                title="Serial Tipper' Gives Deserving Teen Life-Changing Tip"
-                style="border: none;"
-                allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
-            <noscript>
-                <p>
-                    If the video doesn’t load, view it directly on 
-                    <a href="https://www.youtube.com/watch?v=EOzz48ZHQzw" target="_blank">YouTube</a>.
-                </p>
-            </noscript>
-        </div>
-    </article>
-</section>
-        
-    
-        <!-- Section 3 -->
+        <!-- Featured Blog Posts Section -->
         <section>
-            <h2>Closing Words</h2>
+            <h2>Featured Blog Posts</h2>
             <article>
-                <p>Thank you for reading! I hope this post <em>inspired</em> and <strong>motivated</strong> you. Feel free to share your thoughts about my topic in the comments of my social below!</p>
-                <img src="closing-placeholder.jpg" data-src="images/closing.jpeg" alt="The closing Image" class="featured-image lazy">
+                <h3>Blog Post Title 1</h3>
+                <p>
+                    <strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.
+                </p>
+                <a href="blog-post-1.html">Read More</a>
+            </article>
+            <article>
+                <h3>Blog Post Title 2</h3>
+                <p>
+                    <strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.
+                </p>
+                <a href="blog-post-2.html">Read More</a>
             </article>
         </section>
     </main>
 
     <hr>
-<footer>
-  <p>&copy; 2024 Lamon Tolbert Jr's Blog. Address: Nashville, TN, 37207</p>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/lamontolbertjr/" target="_blank" title="LinkedIn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-        <path d="M4.98 3.5c0 1.38-1.11 2.5-2.49 2.5S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.13 24V7.98H4.8V24H.13zM9.69 7.98h4.31v2.16h.06c.6-1.14 2.07-2.35 4.26-2.35 4.55 0 5.39 2.89 5.39 6.64v7.57h-4.66v-6.7c0-1.6-.03-3.67-2.37-3.67-2.37 0-2.73 1.75-2.73 3.55v6.82H9.69V7.98z"/>
-      </svg>
-    </a>
-    <a href="https://x.com/" target="_blank" title="Twitter">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-        <path d="M24 4.557a9.832 9.832 0 01-2.828.775 4.933 4.933 0 002.165-2.724 9.869 9.869 0 01-3.127 1.195 4.924 4.924 0 00-8.384 4.482C7.691 7.723 4.066 5.794 1.64 2.92a4.92 4.92 0 001.523 6.573A4.902 4.902 0 01.964 8.79v.062a4.922 4.922 0 003.95 4.827 4.904 4.904 0 01-2.224.084 4.926 4.926 0 004.604 3.417 9.866 9.866 0 01-6.102 2.104c-.396 0-.788-.023-1.176-.069A13.94 13.94 0 007.548 22c9.058 0 14.01-7.513 14.01-14.02 0-.213-.004-.426-.014-.637A10.03 10.03 0 0024 4.557z"/>
-      </svg>
-    </a>
-    <a href="https://www.facebook.com/?_rdr" target="_blank" title="Facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.81V14.709h-3.42v-3.62h3.42V8.392c0-3.39 2.064-5.233 5.084-5.233 1.439 0 2.676.107 3.037.155v3.526h-2.085c-1.634 0-1.951.776-1.951 1.915v10.15h4.66V14.71c0-1.6-.03-3.67-2.37-3.67-2.37 0-2.73 1.75-2.73 3.55v6.82H9.69V7.98z"/>
-        </svg>
-    </a>
-  </div>
-</footer>
- <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">▲</button>
-    
-<script src="./JavaScript/scripts.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <svg><!-- Twitter Icon SVG --></svg>
+            </a>
+            <a href="https://facebook.com/yourprofile" target="_blank">
+                <svg><!-- Facebook Icon SVG --></svg>
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank">
+                <svg><!-- Instagram Icon SVG --></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn">&#8679;</button>
+
+    <script src="../JavaScript/scripts.js"></script>
 </body>
 </html>

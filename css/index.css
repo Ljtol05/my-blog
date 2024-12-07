@@ -52,6 +52,40 @@ body, html {
   text-shadow: 0 0 2px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5); /* Neon glow effect */
 }
 
+/* Dropdown Menu Styling */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%; /* Position below the dropdown link */
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #00d4ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.6);
   color: #00d4ff;

@@ -48,4 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
             observer.observe(img);
         });
     }
+    
+
+// Dynamic Greeting Functionality
+const dynamicGreeting = document.getElementById('dynamicGreeting');
+const hours = new Date().getHours();
+let greeting;
+
+if (hours < 12) {
+    greeting = "Good Morning!";
+} else if (hours < 18) {
+    greeting = "Good Afternoon!";
+} else {
+    greeting = "Good Evening!";
+}
+
+dynamicGreeting.textContent = greeting;
 });
