@@ -1,42 +1,79 @@
 @use './variables';
+@use 'sass:color';
 
 article {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9); // Inline specific background
+  border-radius: variables.$radius-medium; // Use medium radius variable
   padding: 20px;
   margin: 20px 0;
-  box-shadow: variables.$box-shadow-light;
+  box-shadow: variables.$box-shadow-light; // Light shadow variable
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: variables.$box-shadow-heavy;
+    transform: translateY(-5px); // Lift effect on hover
+    box-shadow: variables.$box-shadow-heavy; // Heavy shadow for hover
+  }
+
+  h2 {
+    font-family: variables.$font-heading; // Heading font variable
+    font-size: 1.8rem;
+    color: variables.$primary-color; // Primary color for headings
+    margin-bottom: 15px;
   }
 
   p {
-    font-family: variables.$font-family-base;
+    font-family: variables.$font-body; // Body font variable
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #000000;
+    color: variables.$text-dark; // Dark text color variable
+    margin-bottom: 15px;
 
     strong {
-      color: variables.$primary-color;
+      color: variables.$primary-color; // Highlight with primary color
     }
 
     em {
-      color: variables.$secondary-color;
+      color: variables.$secondary-color; // Emphasize with secondary color
       font-style: italic;
     }
   }
 
   a {
-    color: variables.$primary-color;
+    color: variables.$primary-color; // Link color
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 
     &:hover {
-      color: white;
+      color: variables.$text-white; // White on hover
       text-decoration: underline;
     }
+  }
+
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: variables.$text-white; // White button text
+    background-color: variables.$primary-color; // Button background
+    border: none;
+    border-radius: variables.$radius-small; // Small radius for buttons
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: color.adjust(variables.$primary-color, $lightness: -10%); // Darken primary color on hover
+      transform: scale(1.05);
+    }
+  }
+
+  .featured-image {
+    max-width: 100%; // Responsive image
+    height: auto;
+    border-radius: variables.$radius-medium; // Medium radius for images
+    margin-bottom: 20px;
   }
 }

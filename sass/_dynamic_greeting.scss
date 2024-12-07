@@ -1,0 +1,19 @@
+@use './variables';
+
+#dynamicGreeting {
+  font-family: variables.$font-heading;
+  font-size: 2rem;
+  color: variables.$primary-color;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: variables.$radius-medium;
+  box-shadow: variables.$box-shadow-light;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: variables.$box-shadow-heavy;
+  }
+}

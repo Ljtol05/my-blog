@@ -1,0 +1,18 @@
+@use './variables';
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  // Background styles
+  background-image: url('images/blog.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+
+  // Optionally, you could use variables for these settings if applicable
+  // Example:
+  // background-color: variables.$background-color; // For fallback
+}

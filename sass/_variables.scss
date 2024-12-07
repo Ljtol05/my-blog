@@ -1,10 +1,21 @@
 // Color Variables
-$background-color: rgba(0, 0, 0, 0.6);
-$primary-color: #00d4ff;
-$secondary-color: #e76f51;
-$font-family-base: 'Lora', serif;
-$font-family-heading: 'Bebas Neue', sans-serif;
+$primary-color: #00d4ff; // Electric Blue
+$secondary-color: #e76f51; // Reddish Orange
+$background-color: rgba(0, 0, 0, 0.6); // Light Gray
+$background-overlay: rgba(0, 0, 0, 0.6); // Semi-transparent black
+$hover-glow: rgba(255, 255, 255, 0.2); // Subtle white glow
+$text-white: #ffffff; // White
+$text-dark: #333; // Dark Gray
 
-// Box Shadows
-$box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3);
-$box-shadow-heavy: 0 8px 16px rgba(255, 255, 255, 0.4);
+// Font Variables
+$font-heading: 'Bebas Neue', sans-serif;
+$font-body: 'Lora', serif;
+
+// Box Shadow Variables
+$box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3); // Light Shadow
+$box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2); // Medium Shadow
+$box-shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.4); // Heavy shadow
+
+// Border Radius Variables
+$radius-small: 5px;
+$radius-medium: 8px;

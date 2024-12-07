@@ -1,0 +1,166 @@
+@use './variables';
+
+/* Tablet and small screen adjustments */
+@media (max-width: 768px) {
+  body {
+    background-color: variables.$background-color;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  header {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    color: variables.$primary-color;
+  }
+
+  #dynamicGreeting {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: variables.$primary-color;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: variables.$secondary-color;
+  }
+
+  article {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  article p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px;
+  }
+
+  .featured-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  blockquote {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: variables.$primary-color;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  footer .social-links a svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+    fill: variables.$primary-color;
+  }
+
+  footer .social-links a:hover svg {
+    transform: scale(1.2);
+    fill: #ffffff;
+  }
+
+  #scrollToTopBtn {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    bottom: 20px;
+    right: 20px;
+    color: variables.$secondary-color;
+  }
+}
+
+/* Extra small screen adjustments (phones) */
+@media (max-width: 480px) {
+  #dynamicGreeting {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 5px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  article p {
+    font-size: 0.9rem;
+  }
+
+  blockquote {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  footer .social-links a svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  #scrollToTopBtn {
+    font-size: 1.2rem;
+  }
+}

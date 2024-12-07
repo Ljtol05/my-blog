@@ -2,11 +2,11 @@
 
 footer {
   text-align: center;
-  background: variables.$background-color;
-  color: white;
+  background: variables.$background-color; // Background color from variables
+  color: variables.$text-white; // Use consistent text color variable
   padding: 20px;
   margin-top: 20px;
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid variables.$hover-glow; // Subtle hover effect color
 
   .social-links {
     margin-top: 10px;
@@ -19,12 +19,12 @@ footer {
       svg {
         width: 30px;
         height: 30px;
-        fill: variables.$primary-color;
+        fill: variables.$primary-color; // Use primary color for icons
         transition: transform 0.3s ease, fill 0.3s ease;
 
         &:hover {
-          transform: scale(1.5);
-          fill: white;
+          transform: scale(1.5); // Enlarge icon on hover
+          fill: variables.$text-white; // Change to white on hover
         }
       }
     }
