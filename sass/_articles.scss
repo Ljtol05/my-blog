@@ -1,79 +1,91 @@
 @use './variables';
 @use 'sass:color';
 
+/* General Article Styling */
 article {
-  background: rgba(255, 255, 255, 0.9); // Inline specific background
-  border-radius: variables.$radius-medium; // Use medium radius variable
+  background: rgba(255, 255, 255, 0.9); /* Light white background for readability */
+  border-radius: variables.$radius-large; /* Smooth rounded corners */
+  padding: 20px; /* Add padding inside the article */
+  margin: 20px 0; /* Space between articles */
+  box-shadow: variables.$box-shadow-medium; /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect for Articles */
+article:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: variables.$box-shadow-heavy; /* Brighten shadow on hover for neon effect */
+}
+
+/* Paragraph Styling Inside Article */
+article p {
+  font-family: variables.$font-body;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: variables.$text-dark; /* Dark gray for contrast on white background */
+}
+
+/* Strong and Emphasis Text Styling */
+article p strong {
+  color: variables.$primary-color; /* Electric blue to highlight strong text */
+}
+article p em {
+  color: variables.$secondary-color; /* Neon reddish-orange for emphasis */
+  font-style: italic; /* Keep italic style */
+}
+
+/* Link Styling Inside Articles */
+article a {
+  color: variables.$primary-color; /* Electric blue for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Emphasize links */
+}
+article a:hover {
+  color: variables.$text-white; /* Bright white on hover for contrast */
+  text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Heading Styling */
+h2 {
+  font-family: variables.$heading-font-family; /* Creative font */
+  font-size: variables.$heading-font-size;
+  color: variables.$heading-color; /* Electric blue text */
+  text-align: center; /* Center-align text */
+  margin: 20px 0; /* Space above and below the heading */
+}
+
+/* Section Styling */
+section {
+  margin: 20px auto;
   padding: 20px;
-  margin: 20px 0;
-  box-shadow: variables.$box-shadow-light; // Light shadow variable
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  background: variables.$section-background; /* Semi-transparent black for blending with brick */
+  color: variables.$section-text-color; /* White text for readability */
+  border-radius: variables.$radius-medium; /* Rounded corners for a softer look */
+  box-shadow: variables.$box-shadow-medium; /* Subtle shadow for depth */
+  backdrop-filter: blur(5px); /* Add slight blur to enhance the neon look */
+  border: variables.$section-border; /* Subtle border for contrast */
+}
 
-  &:hover {
-    transform: translateY(-5px); // Lift effect on hover
-    box-shadow: variables.$box-shadow-heavy; // Heavy shadow for hover
-  }
+/* Blockquote Styling */
+blockquote {
+  font-family: variables.$font-body; /* Matches the article's creative font */
+  font-size: 1.5rem; /* Slightly larger font for emphasis */
+  font-style: italic; /* Retain the traditional italic look of quotes */
+  color: variables.$text-white; /* Bright white text for readability */
+  background-color: variables.$blockquote-background; /* Semi-transparent black background */
+  border-left: variables.$blockquote-border; /* Electric blue left border for emphasis */
+  padding: 15px 20px; /* Add padding for spacing inside the blockquote */
+  margin: 20px auto; /* Space around the blockquote */
+  max-width: 80%; /* Keep it within a readable width */
+  box-shadow: variables.$box-shadow-light; /* Subtle shadow for depth */
+  border-radius: variables.$radius-medium; /* Rounded corners for a modern look */
+}
 
-  h2 {
-    font-family: variables.$font-heading; // Heading font variable
-    font-size: 1.8rem;
-    color: variables.$primary-color; // Primary color for headings
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-family: variables.$font-body; // Body font variable
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: variables.$text-dark; // Dark text color variable
-    margin-bottom: 15px;
-
-    strong {
-      color: variables.$primary-color; // Highlight with primary color
-    }
-
-    em {
-      color: variables.$secondary-color; // Emphasize with secondary color
-      font-style: italic;
-    }
-  }
-
-  a {
-    color: variables.$primary-color; // Link color
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: variables.$text-white; // White on hover
-      text-decoration: underline;
-    }
-  }
-
-  .read-more-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: variables.$text-white; // White button text
-    background-color: variables.$primary-color; // Button background
-    border: none;
-    border-radius: variables.$radius-small; // Small radius for buttons
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-
-    &:hover {
-      background-color: color.adjust(variables.$primary-color, $lightness: -10%); // Darken primary color on hover
-      transform: scale(1.05);
-    }
-  }
-
-  .featured-image {
-    max-width: 100%; // Responsive image
-    height: auto;
-    border-radius: variables.$radius-medium; // Medium radius for images
-    margin-bottom: 20px;
-  }
+/* Blockquote Hover Effect */
+blockquote:hover {
+  background-color: variables.$blockquote-hover-background; /* Slight glow on hover */
+  box-shadow: variables.$blockquote-hover-shadow; /* Brighter shadow on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
 }

@@ -1,12 +1,10 @@
-@use './variables';
-
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 
   // Background styles
-  background-image: url('images/blog.jpg'); 
+  background-image: url('../images/blog.jpg'); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 

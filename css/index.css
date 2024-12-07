@@ -1,277 +1,8 @@
-header {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #00d4ff;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-}
-header .nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0;
-}
-header .nav-links a {
-  text-decoration: none;
-  color: #00d4ff;
-  font-size: 1.2rem;
-  font-family: "Bebas Neue", sans-serif;
-  padding: 8px 15px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-header .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  border-color: #00d4ff;
-}
-header .nav-links a:active {
-  background-color: #00aacc;
-  color: white;
-}
-
-footer {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  padding: 20px;
-  margin-top: 20px;
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-}
-footer .social-links {
-  margin-top: 10px;
-}
-footer .social-links a {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-}
-footer .social-links a svg {
-  width: 30px;
-  height: 30px;
-  fill: #00d4ff;
-  transition: transform 0.3s ease, fill 0.3s ease;
-}
-footer .social-links a svg:hover {
-  transform: scale(1.5);
-  fill: #ffffff;
-}
-
-article {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-article h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.8rem;
-  color: #00d4ff;
-  margin-bottom: 15px;
-}
-article p {
-  font-family: "Lora", serif;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 15px;
-}
-article p strong {
-  color: #00d4ff;
-}
-article p em {
-  color: #e76f51;
-  font-style: italic;
-}
-article a {
-  color: #00d4ff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-article a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-article .read-more-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #00d4ff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-article .read-more-btn:hover {
-  background-color: #00aacc;
-  transform: scale(1.05);
-}
-article .featured-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-/* Tablet and small screen adjustments */
-@media (max-width: 768px) {
-  body {
-    background-color: rgba(0, 0, 0, 0.6);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  section {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  header {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .nav-links {
-    background: rgba(0, 0, 0, 0.8);
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .nav-links a {
-    font-size: 1rem;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.1);
-    color: #00d4ff;
-  }
-  #dynamicGreeting {
-    font-size: 1.6rem;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    color: #00d4ff;
-  }
-  h2 {
-    font-size: 1.5rem;
-    color: #e76f51;
-  }
-  article {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  article p {
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-    padding: 10px;
-  }
-  .featured-image {
-    max-width: 100%;
-    height: auto;
-    margin: 10px auto;
-  }
-  blockquote {
-    padding: 10px 15px;
-    font-size: 1.2rem;
-    color: #00d4ff;
-  }
-  footer {
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-  }
-  footer .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  footer .social-links a svg {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, fill 0.3s ease;
-    fill: #00d4ff;
-  }
-  footer .social-links a:hover svg {
-    transform: scale(1.2);
-    fill: #ffffff;
-  }
-  #scrollToTopBtn {
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-    bottom: 20px;
-    right: 20px;
-    color: #e76f51;
-  }
-}
-/* Extra small screen adjustments (phones) */
-@media (max-width: 480px) {
-  #dynamicGreeting {
-    font-size: 1.8rem;
-  }
-  section {
-    padding: 5px;
-  }
-  .nav-links a {
-    font-size: 0.9rem;
-    padding: 5px;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  article p {
-    font-size: 0.9rem;
-  }
-  blockquote {
-    font-size: 1rem;
-    padding: 8px 10px;
-  }
-  footer {
-    font-size: 0.8rem;
-    padding: 5px;
-  }
-  footer .social-links a svg {
-    width: 25px;
-    height: 25px;
-  }
-  #scrollToTopBtn {
-    font-size: 1.2rem;
-  }
-}
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url("images/blog.jpg");
+  background-image: url("../images/blog.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,19 +30,416 @@ body, html {
   border-radius: 10px; /* Apply rounded corners to the iframe */
 }
 
+/* Featured Image Styling */
+.featured-image {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a light shadow for depth */
+}
+
+/* Dynamic Greeting Styling */
 #dynamicGreeting {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif; /* Creative font */
+  color: #00d4ff; /* Electric blue color */
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold; /* Make it stand out */
+  margin: 0 auto; /* Center the element */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 0 0 2px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5); /* Neon glow effect */
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
   color: #00d4ff;
   text-align: center;
-  margin: 20px 0;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
 }
-#dynamicGreeting:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}/*# sourceMappingURL=index.css.map */
+
+/* Navigation links container inside header */
+header .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between links */
+  padding: 10px 0;
+}
+
+/* Individual link styling */
+header .nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: #00d4ff; /* Electric blue for links */
+  font-size: 1.2rem; /* Slightly larger font size for visibility */
+  font-family: "Bebas Neue", sans-serif; /* Modern font */
+  padding: 8px 15px; /* Add padding around the links */
+  border: 2px solid transparent; /* Border for hover effect */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect */
+header .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle white glow on hover */
+  color: white; /* White text for hover state */
+  border-color: #00d4ff; /* Add electric blue border on hover */
+}
+
+/* Active link styling */
+header .nav-links a:active {
+  background-color: rgba(0, 212, 255, 0.3); /* Slight glow for active link */
+  color: white;
+}
+
+/* Horizontal Rule */
+hr {
+  margin: 20px auto;
+  width: 85%;
+  border: none; /* Remove default border */
+  height: 2px; /* Set height */
+  background: rgba(255, 255, 255, 0.2); /* Subtle white glow */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect to match neon theme */
+}
+
+/* General Article Styling */
+article {
+  background: rgba(255, 255, 255, 0.9); /* Light white background for readability */
+  border-radius: 10px; /* Smooth rounded corners */
+  padding: 20px; /* Add padding inside the article */
+  margin: 20px 0; /* Space between articles */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect for Articles */
+article:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Brighten shadow on hover for neon effect */
+}
+
+/* Paragraph Styling Inside Article */
+article p {
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333; /* Dark gray for contrast on white background */
+}
+
+/* Strong and Emphasis Text Styling */
+article p strong {
+  color: #00d4ff; /* Electric blue to highlight strong text */
+}
+
+article p em {
+  color: #e76f51; /* Neon reddish-orange for emphasis */
+  font-style: italic; /* Keep italic style */
+}
+
+/* Link Styling Inside Articles */
+article a {
+  color: #00d4ff; /* Electric blue for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Emphasize links */
+}
+
+article a:hover {
+  color: #ffffff; /* Bright white on hover for contrast */
+  text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Heading Styling */
+h2 {
+  font-family: "Bebas Neue", sans-serif; /* Creative font */
+  font-size: 40px;
+  color: #e76f51; /* Electric blue text */
+  text-align: center; /* Center-align text */
+  margin: 20px 0; /* Space above and below the heading */
+}
+
+/* Section Styling */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for blending with brick */
+  color: #ffffff; /* White text for readability */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  backdrop-filter: blur(5px); /* Add slight blur to enhance the neon look */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for contrast */
+}
+
+/* Blockquote Styling */
+blockquote {
+  font-family: "Lora", serif; /* Matches the article's creative font */
+  font-size: 1.5rem; /* Slightly larger font for emphasis */
+  font-style: italic; /* Retain the traditional italic look of quotes */
+  color: #ffffff; /* Bright white text for readability */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-left: 5px solid #00d4ff; /* Electric blue left border for emphasis */
+  padding: 15px 20px; /* Add padding for spacing inside the blockquote */
+  margin: 20px auto; /* Space around the blockquote */
+  max-width: 80%; /* Keep it within a readable width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+/* Blockquote Hover Effect */
+blockquote:hover {
+  background-color: rgba(0, 212, 255, 0.2); /* Slight glow on hover */
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Brighter shadow on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+  color: #ffffff; /* White text for readability */
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for contrast */
+}
+
+/* Social Links Container */
+footer .social-links {
+  margin-top: 10px;
+}
+
+/* Social Icons Styling */
+footer .social-links a {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* SVG Icon Styling */
+footer .social-links a svg {
+  width: 30px; /* Set icon size */
+  height: 30px;
+  fill: #00d4ff; /* Electric blue color */
+  transition: transform 0.3s ease, fill 0.3s ease; /* Smooth hover effects */
+}
+
+footer .social-links a:hover svg {
+  transform: scale(1.5); /* Enlarge icon */
+  fill: #ffffff; /* Change to white on hover */
+}
+
+/* Read More Button */
+/* Style for the Read More button */
+.read-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00d4ff; /* Blue background */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.read-more-btn:hover {
+  background-color: #00aacc; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Active state (while clicking) */
+.read-more-btn:active {
+  background-color: #007f99; /* Even darker blue */
+  transform: scale(0.98); /* Slight shrink on click */
+}
+
+/* Focus state (for accessibility) */
+.read-more-btn:focus {
+  outline: 1px dashed #ccf6ff;
+  outline-offset: 2px;
+}
+
+/* Hide content by default */
+.read-more-content {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Show content when expanded */
+.read-more-content.expanded {
+  display: block;
+  opacity: 1;
+  max-height: 1000px; /* Arbitrary large max-height to accommodate content */
+}
+
+#scrollToTopBtn {
+  width: 50px; /* Increase width */
+  height: 50px; /* Increase height */
+  font-size: 35px; /* Increase font size */
+  padding: 10px; /* Add padding */
+  position: fixed; /* Fix position */
+  bottom: 50px; /* Position from bottom */
+  right: 50px; /* Position from right */
+  display: none; /* Initially hidden */
+  background-color: transparent; /* Background color */
+  color: #e76f51; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  z-index: 1000; /* Ensure it is on top */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ed947e; /* Change background on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  /* Background Overlay for Mobile */
+  body {
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent dark overlay */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  /* Section Full Width */
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); /* White semi-transparent background */
+  }
+  /* Header Adjustments */
+  header {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nav-links {
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column; /* Stack navigation links */
+    gap: 10px; /* Reduce spacing between links */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nav-links a {
+    font-size: 1rem; /* Slightly smaller text size for links */
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1); /* Subtle hoverable background */
+  }
+  #dynamicGreeting {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.5rem; /* Reduce heading size */
+  }
+  article {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  article p {
+    color: #333;
+    font-size: 1rem; /* Reduce text size for readability */
+    line-height: 1.6; /* Adjust line spacing */
+    padding: 10px;
+  }
+  /* Featured Image Adjustments */
+  .featured-image {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin: 10px auto;
+  }
+  /* Blockquote Adjustments */
+  blockquote {
+    padding: 10px 15px; /* Adjust padding */
+    font-size: 1.2rem; /* Slightly smaller font size */
+  }
+  /* Footer Adjustments */
+  footer {
+    font-size: 1rem; /* Maintain smaller text size for footer */
+    margin: 0;
+    padding: 10px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center-align footer content */
+    background: rgba(0, 0, 0, 0.8); /* Optional: Add a dark background for contrast */
+    color: #ffffff; /* Optional: Use white text for readability */
+  }
+  footer .social-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center-align icons */
+    gap: 10px; /* Add spacing between icons */
+    margin-top: 10px; /* Add spacing above icons */
+  }
+  footer .social-links a svg {
+    width: 30px; /* Slightly larger for touch devices */
+    height: 30px;
+    transition: transform 0.3s ease, fill 0.3s ease; /* Add hover effects */
+  }
+  footer .social-links a:hover svg {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+    fill: #ffffff; /* Change color on hover */
+  }
+  /* Scroll to Top Button */
+  #scrollToTopBtn {
+    width: 60px; /* Adjust button size */
+    height: 60px;
+    font-size: 2rem;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  /* Extra Adjustments for Very Small Screens (Phones) */
+  #dynamicGreeting {
+    font-size: 1.8rem;
+  }
+  section {
+    padding: 5px;
+  }
+  .nav-links a {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  article p {
+    font-size: 1rem; /* Even smaller text for tiny screens */
+  }
+  blockquote {
+    font-size: 1rem; /* Compact blockquote */
+    padding: 8px 10px;
+  }
+  footer {
+    font-size: 1rem; /* Slightly smaller font */
+    padding: 5px; /* Reduce padding */
+  }
+  footer .social-links a svg {
+    width: 25px; /* Maintain smaller icon size */
+    height: 25px;
+  }
+  #scrollToTopBtn {
+    font-size: 1.2rem;
+  }
+}

@@ -1,19 +1,12 @@
 @use './variables';
 
+/* Dynamic Greeting Styling */
 #dynamicGreeting {
-  font-family: variables.$font-heading;
-  font-size: 2rem;
-  color: variables.$primary-color;
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: variables.$radius-medium;
-  box-shadow: variables.$box-shadow-light;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: variables.$box-shadow-heavy;
-  }
+  font-family: variables.$font-heading; /* Creative font */
+  color: variables.$primary-color; /* Electric blue color */
+  font-size: variables.$dynamic-greeting-font-size; /* Adjust font size */
+  font-weight: bold; /* Make it stand out */
+  margin: 0 auto; /* Center the element */
+  letter-spacing: variables.$dynamic-greeting-letter-spacing; /* Add spacing between letters */
+  text-shadow: variables.$dynamic-greeting-text-shadow; /* Neon glow effect */
 }

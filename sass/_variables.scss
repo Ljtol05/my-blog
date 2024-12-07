@@ -1,15 +1,22 @@
 // Color Variables
 $primary-color: #00d4ff; // Electric Blue
 $secondary-color: #e76f51; // Reddish Orange
-$background-color: rgba(0, 0, 0, 0.6); // Light Gray
 $background-overlay: rgba(0, 0, 0, 0.6); // Semi-transparent black
 $hover-glow: rgba(255, 255, 255, 0.2); // Subtle white glow
 $text-white: #ffffff; // White
 $text-dark: #333; // Dark Gray
+$background-overlay-mobile: rgba(0, 0, 0, 0.5); // Semi-transparent black for mobile
+$section-background-mobile: rgba(255, 255, 255, 0.9); // White semi-transparent background for mobile
+$nav-links-background: rgba(0, 0, 0, 0.8); // Background for nav links
+$nav-links-hover-background: rgba(255, 255, 255, 0.1); // Hover background for nav links
 
 // Font Variables
 $font-heading: 'Bebas Neue', sans-serif;
 $font-body: 'Lora', serif;
+$font-size-small: 1rem; // Small font size for mobile
+$font-size-medium: 1.2rem; // Medium font size for mobile
+$font-size-large: 1.5rem; // Large font size for mobile
+$font-size-xlarge: 1.8rem; // Extra large font size for mobile
 
 // Box Shadow Variables
 $box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3); // Light Shadow
@@ -19,3 +26,25 @@ $box-shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.4); // Heavy shadow
 // Border Radius Variables
 $radius-small: 5px;
 $radius-medium: 8px;
+$radius-large: 10px; // Added large radius
+
+// Additional Variables
+$blockquote-background: rgba(0, 0, 0, 0.6); // Semi-transparent black for blockquote
+$blockquote-border: 5px solid $primary-color; // Electric blue border for blockquote
+$blockquote-hover-background: rgba(0, 212, 255, 0.2); // Slight glow on hover for blockquote
+$blockquote-hover-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); // Brighter shadow on hover for blockquote
+
+// Section Variables
+$section-background: rgba(0, 0, 0, 0.7); // Semi-transparent black for section background
+$section-text-color: $text-white; // White text for readability
+$section-border: 1px solid rgba(255, 255, 255, 0.2); // Subtle border for contrast
+
+// Heading Variables
+$heading-font-family: $font-heading; // Font family for headings
+$heading-font-size: 40px; // Font size for h2 headings
+$heading-color: $secondary-color; // Color for h2 headings
+
+// Dynamic Greeting Variables
+$dynamic-greeting-font-size: 2rem; // Font size for dynamic greeting
+$dynamic-greeting-letter-spacing: 2px; // Letter spacing for dynamic greeting
+$dynamic-greeting-text-shadow: 0 0 2px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5); // Neon glow effect for dynamic greeting

@@ -1,32 +1,36 @@
 @use './variables';
 
+/* Footer Styling */
 footer {
   text-align: center;
-  background: variables.$background-color; // Background color from variables
-  color: variables.$text-white; // Use consistent text color variable
+  background: variables.$background-overlay; /* Dark semi-transparent background */
+  color: variables.$text-white; /* White text for readability */
   padding: 20px;
   margin-top: 20px;
-  border-top: 2px solid variables.$hover-glow; // Subtle hover effect color
+  border-top: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for contrast */
+}
 
-  .social-links {
-    margin-top: 10px;
+/* Social Links Container */
+footer .social-links {
+  margin-top: 10px;
+}
 
-    a {
-      display: inline-block;
-      margin: 0 10px;
-      text-decoration: none;
+/* Social Icons Styling */
+footer .social-links a {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none; /* Remove underline from links */
+}
 
-      svg {
-        width: 30px;
-        height: 30px;
-        fill: variables.$primary-color; // Use primary color for icons
-        transition: transform 0.3s ease, fill 0.3s ease;
+/* SVG Icon Styling */
+footer .social-links a svg {
+  width: 30px; /* Set icon size */
+  height: 30px;
+  fill: variables.$primary-color; /* Electric blue color */
+  transition: transform 0.3s ease, fill 0.3s ease; /* Smooth hover effects */
+}
 
-        &:hover {
-          transform: scale(1.5); // Enlarge icon on hover
-          fill: variables.$text-white; // Change to white on hover
-        }
-      }
-    }
-  }
+footer .social-links a:hover svg {
+  transform: scale(1.5); /* Enlarge icon */
+  fill: variables.$text-white; /* Change to white on hover */
 }

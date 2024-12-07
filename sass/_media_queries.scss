@@ -1,22 +1,25 @@
 @use './variables';
 
-/* Tablet and small screen adjustments */
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
+  /* Background Overlay for Mobile */
   body {
-    background-color: variables.$background-color;
+    background-color: variables.$background-overlay-mobile; /* Add semi-transparent dark overlay */
     margin: 0;
-    padding: 0;
+    padding: 0; 
     overflow-x: hidden;
   }
 
+  /* Section Full Width */
   section {
     width: 100%;
     margin: 0;
     padding: 10px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;  
+    background-color: variables.$section-background-mobile; /* White semi-transparent background */
   }
 
+  /* Header Adjustments */
   header {
     margin: 0;
     padding: 10px;
@@ -25,107 +28,104 @@
   }
 
   .nav-links {
-    background: rgba(0, 0, 0, 0.8);
-    flex-direction: column;
-    gap: 10px;
+    background: variables.$nav-links-background;
+    flex-direction: column; /* Stack navigation links */
+    gap: 10px; /* Reduce spacing between links */
     width: 100%;
     box-sizing: border-box;
   }
 
   .nav-links a {
-    font-size: 1rem;
+    font-size: variables.$font-size-small; /* Slightly smaller text size for links */
     padding: 15px 20px;
     display: block;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.1);
-    color: variables.$primary-color;
+    background: variables.$nav-links-hover-background; /* Subtle hoverable background */
   }
 
   #dynamicGreeting {
-    font-size: 1.6rem;
+    font-size: variables.$font-size-xlarge; /* Adjust font size for smaller screens */
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    color: variables.$primary-color;
   }
 
   h2 {
-    font-size: 1.5rem;
-    color: variables.$secondary-color;
+    font-size: variables.$font-size-large; /* Reduce heading size */
   }
 
   article {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
   }
 
   article p {
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
+    color: variables.$text-dark;
+    font-size: variables.$font-size-small; /* Reduce text size for readability */
+    line-height: 1.6; /* Adjust line spacing */
     padding: 10px;
   }
 
+  /* Featured Image Adjustments */
   .featured-image {
-    max-width: 100%;
+    max-width: 100%; /* Make images responsive */
     height: auto;
     margin: 10px auto;
   }
 
+  /* Blockquote Adjustments */
   blockquote {
-    padding: 10px 15px;
-    font-size: 1.2rem;
-    color: variables.$primary-color;
+    padding: 10px 15px; /* Adjust padding */
+    font-size: variables.$font-size-medium; /* Slightly smaller font size */
   }
 
+  /* Footer Adjustments */
   footer {
-    font-size: 0.9rem;
+    font-size: variables.$font-size-small; /* Maintain smaller text size for footer */
     margin: 0;
     padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center-align footer content */
+    background: variables.$nav-links-background; /* Optional: Add a dark background for contrast */
+    color: variables.$text-white; /* Optional: Use white text for readability */
   }
 
   footer .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center-align icons */
+    gap: 10px; /* Add spacing between icons */
+    margin-top: 10px; /* Add spacing above icons */
   }
 
   footer .social-links a svg {
-    width: 30px;
+    width: 30px; /* Slightly larger for touch devices */
     height: 30px;
-    transition: transform 0.3s ease, fill 0.3s ease;
-    fill: variables.$primary-color;
+    transition: transform 0.3s ease, fill 0.3s ease; /* Add hover effects */
   }
 
   footer .social-links a:hover svg {
-    transform: scale(1.2);
-    fill: #ffffff;
+    transform: scale(1.2); /* Enlarge slightly on hover */
+    fill: variables.$text-white; /* Change color on hover */
   }
 
+  /* Scroll to Top Button */
   #scrollToTopBtn {
-    width: 60px;
+    width: 60px; /* Adjust button size */
     height: 60px;
     font-size: 2rem;
     bottom: 20px;
     right: 20px;
-    color: variables.$secondary-color;
   }
 }
 
-/* Extra small screen adjustments (phones) */
 @media (max-width: 480px) {
+  /* Extra Adjustments for Very Small Screens (Phones) */
   #dynamicGreeting {
-    font-size: 1.8rem;
+    font-size: variables.$font-size-xlarge;
   }
 
   section {
@@ -133,30 +133,30 @@
   }
 
   .nav-links a {
-    font-size: 0.9rem;
+    font-size: variables.$font-size-small;
     padding: 5px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: variables.$font-size-large;
   }
 
   article p {
-    font-size: 0.9rem;
+    font-size: variables.$font-size-small; /* Even smaller text for tiny screens */
   }
 
   blockquote {
-    font-size: 1rem;
+    font-size: variables.$font-size-small; /* Compact blockquote */
     padding: 8px 10px;
   }
 
   footer {
-    font-size: 0.8rem;
-    padding: 5px;
+    font-size: variables.$font-size-small; /* Slightly smaller font */
+    padding: 5px; /* Reduce padding */
   }
 
   footer .social-links a svg {
-    width: 25px;
+    width: 25px; /* Maintain smaller icon size */
     height: 25px;
   }
 
