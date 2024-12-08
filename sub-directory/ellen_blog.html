@@ -13,10 +13,18 @@
 </head>
 <body>
     <header>
-        <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
+        <a href="../index.html">
+            <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
+        </a>
         <nav class="nav-links">
-          <a href="../index.html">home</a>
-          <a href="hometown.html">Home Town</a>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <div class="dropdown">
+            <a href="blog.html">Blog</a>
+            <div class="dropdown-content">
+                <a href="ellen_blog.html">Ellen Blog</a>
+            </div>
+        </div>
           <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -58,7 +66,7 @@
             <iframe
                 src="https://www.youtube.com/embed/EOzz48ZHQzw"
                 title="Serial Tipper' Gives Deserving Teen Life-Changing Tip"
-                style="border: none;"
+                class="youtube-iframe"
                 allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
@@ -105,7 +113,7 @@
   </div>
 </footer>
  <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">▲</button>
+ <button id="scrollToTopBtn">&#8679; UP</button>
     
 <script src="../JavaScript/scripts.js"></script>
 </body>

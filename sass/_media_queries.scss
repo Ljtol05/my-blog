@@ -45,6 +45,27 @@
     background: variables.$nav-links-hover-background; /* Subtle hoverable background */
   }
 
+  .dropdown {
+    width: 100%; /* Ensure dropdown takes full width */
+  }
+
+  .dropdown-content {
+    position: static; /* Make dropdown content flow with the document */
+    background-color: variables.$nav-links-background;
+    box-shadow: none; /* Remove box shadow */
+    width: 100%; /* Ensure dropdown content takes full width */
+    display: none; /* Initially hidden */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+  }
+
+  .dropdown-content a {
+    padding: 10px 15px; /* Adjust padding for mobile */
+    text-align: center; /* Center-align text */
+  }
+
   #dynamicGreeting {
     font-size: variables.$font-size-xlarge; /* Adjust font size for smaller screens */
     text-align: center;
@@ -60,6 +81,11 @@
     width: 100%;
     margin: 10px 0;
     padding: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9); /* Light white background for readability */
+    border-radius: variables.$radius-large; /* Smooth rounded corners */
+    box-shadow: variables.$box-shadow-medium; /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
   }
 
   article p {
@@ -69,12 +95,15 @@
     padding: 10px;
   }
 
-  /* Featured Image Adjustments */
-  .featured-image {
-    max-width: 100%; /* Make images responsive */
-    height: auto;
-    margin: 10px auto;
-  }
+ /* Featured Image Adjustments */
+ .featured-image {
+  max-width: 90%; /* Make images responsive */
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  border-radius: variables.$radius-small; /* Optional: Add rounded corners */
+  box-shadow: variables.$box-shadow-light; /* Optional: Add a subtle shadow */
+}
 
   /* Blockquote Adjustments */
   blockquote {

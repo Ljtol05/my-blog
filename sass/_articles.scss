@@ -89,3 +89,11 @@ blockquote:hover {
   transform: translateY(-2px); /* Subtle lift on hover */
   transition: all 0.3s ease-in-out; /* Smooth hover transition */
 }
+/* Heading 3 Styling */
+h3 {
+  font-family: variables.$font-body; /* Matches the article's body font */
+  font-size: 1.8rem; /* Slightly larger than body text */
+  color: variables.$heading-color; /* Use the same color as h2 headings */
+  margin: 15px 0; /* Space above and below the heading */
+  text-align: left; /* Left-align text */
+}

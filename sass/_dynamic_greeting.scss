@@ -9,4 +9,23 @@
   margin: 0 auto; /* Center the element */
   letter-spacing: variables.$dynamic-greeting-letter-spacing; /* Add spacing between letters */
   text-shadow: variables.$dynamic-greeting-text-shadow; /* Neon glow effect */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: variables.$box-shadow-light;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dynamicGreeting:hover {
+  transform: translateY(-5px);
+  box-shadow: variables.$box-shadow-heavy;
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
 }

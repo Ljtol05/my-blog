@@ -14,13 +14,15 @@
   border-radius: variables.$radius-small; /* Rounded corners */
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: variables.$box-shadow-light; /* Light shadow for depth */
 }
 
 /* Hover effect */
 .read-more-btn:hover {
   background-color: color.adjust(variables.$primary-color, $lightness: -10%); /* Darker blue on hover */
   transform: scale(1.05); /* Slightly enlarge button */
+  box-shadow: variables.$box-shadow-medium; /* Add a medium shadow on hover */
 }
 
 /* Active state (while clicking) */

@@ -1,5 +1,5 @@
-// Read More Button Functionality
 document.addEventListener("DOMContentLoaded", () => {
+    // Read More Button Functionality
     const readMoreBtns = document.querySelectorAll('.read-more-btn');
 
     readMoreBtns.forEach(btn => {
@@ -48,20 +48,29 @@ document.addEventListener("DOMContentLoaded", () => {
             observer.observe(img);
         });
     }
-    
 
-// Dynamic Greeting Functionality
-const dynamicGreeting = document.getElementById('dynamicGreeting');
-const hours = new Date().getHours();
-let greeting;
+    // Dynamic Greeting Functionality
+    const dynamicGreeting = document.getElementById('dynamicGreeting');
+    const hours = new Date().getHours();
+    let greeting;
 
-if (hours < 12) {
-    greeting = "Good Morning!";
-} else if (hours < 18) {
-    greeting = "Good Afternoon!";
-} else {
-    greeting = "Good Evening!";
-}
+    if (hours < 12) {
+        greeting = "Good Morning!";
+    } else if (hours < 18) {
+        greeting = "Good Afternoon!";
+    } else {
+        greeting = "Good Evening!";
+    }
 
-dynamicGreeting.textContent = greeting;
+    dynamicGreeting.textContent = greeting;
+
+    // Highlight Active Nav Link
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentUrl = window.location.href;
+
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active');
+        }
+    });
 });

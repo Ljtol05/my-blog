@@ -50,6 +50,25 @@ body, html {
   margin: 0 auto; /* Center the element */
   letter-spacing: 2px; /* Add spacing between letters */
   text-shadow: 0 0 2px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5); /* Neon glow effect */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dynamicGreeting:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
 }
 
 /* Dropdown Menu Styling */
@@ -124,9 +143,10 @@ header .nav-links a:hover {
 }
 
 /* Active link styling */
-header .nav-links a:active {
-  background-color: rgba(0, 212, 255, 0.3); /* Slight glow for active link */
-  color: white;
+header .nav-links a.active {
+  background-color: #00d4ff; /* Highlight background color */
+  color: #ffffff; /* Highlight text color */
+  border-color: #00d4ff; /* Highlight border color */
 }
 
 /* Horizontal Rule */
@@ -203,7 +223,8 @@ section {
   color: #ffffff; /* White text for readability */
   border-radius: 8px; /* Rounded corners for a softer look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  backdrop-filter: blur(5px); /* Add slight blur to enhance the neon look */
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); /* Add slight blur to enhance the neon look */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for contrast */
 }
 
@@ -228,6 +249,15 @@ blockquote:hover {
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Brighter shadow on hover */
   transform: translateY(-2px); /* Subtle lift on hover */
   transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+/* Heading 3 Styling */
+h3 {
+  font-family: "Lora", serif; /* Matches the article's body font */
+  font-size: 1.8rem; /* Slightly larger than body text */
+  color: #e76f51; /* Use the same color as h2 headings */
+  margin: 15px 0; /* Space above and below the heading */
+  text-align: left; /* Left-align text */
 }
 
 /* Footer Styling */
@@ -279,13 +309,15 @@ footer .social-links a:hover svg {
   border-radius: 5px; /* Rounded corners */
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
 }
 
 /* Hover effect */
 .read-more-btn:hover {
   background-color: #00aacc; /* Darker blue on hover */
   transform: scale(1.05); /* Slightly enlarge button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a medium shadow on hover */
 }
 
 /* Active state (while clicking) */
@@ -377,6 +409,23 @@ footer .social-links a:hover svg {
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.1); /* Subtle hoverable background */
   }
+  .dropdown {
+    width: 100%; /* Ensure dropdown takes full width */
+  }
+  .dropdown-content {
+    position: static; /* Make dropdown content flow with the document */
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: none; /* Remove box shadow */
+    width: 100%; /* Ensure dropdown content takes full width */
+    display: none; /* Initially hidden */
+  }
+  .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+  }
+  .dropdown-content a {
+    padding: 10px 15px; /* Adjust padding for mobile */
+    text-align: center; /* Center-align text */
+  }
   #dynamicGreeting {
     font-size: 1.8rem; /* Adjust font size for smaller screens */
     text-align: center;
@@ -390,6 +439,11 @@ footer .social-links a:hover svg {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9); /* Light white background for readability */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
   }
   article p {
     color: #333;
@@ -399,9 +453,12 @@ footer .social-links a:hover svg {
   }
   /* Featured Image Adjustments */
   .featured-image {
-    max-width: 100%; /* Make images responsive */
+    max-width: 90%; /* Make images responsive */
     height: auto;
     margin: 10px auto;
+    display: block;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow */
   }
   /* Blockquote Adjustments */
   blockquote {
@@ -476,4 +533,4 @@ footer .social-links a:hover svg {
   #scrollToTopBtn {
     font-size: 1.2rem;
   }
-}
+}/*# sourceMappingURL=index.css.map */

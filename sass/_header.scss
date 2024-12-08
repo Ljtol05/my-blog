@@ -39,9 +39,10 @@ header .nav-links a:hover {
 }
 
 /* Active link styling */
-header .nav-links a:active {
-  background-color: rgba(0, 212, 255, 0.3); /* Slight glow for active link */
-  color: white;
+header .nav-links a.active {
+  background-color: variables.$primary-color; /* Highlight background color */
+  color: variables.$text-white; /* Highlight text color */
+  border-color: variables.$primary-color; /* Highlight border color */
 }
 
 /* Horizontal Rule */
