@@ -1,4 +1,5 @@
 @use './variables';
+@use './custom_bootstrap'; // Import custom Bootstrap styles
 @use './body';
 @use './iframe_container';
 @use './dynamic_greeting';
