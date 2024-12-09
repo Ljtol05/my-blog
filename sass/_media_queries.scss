@@ -27,6 +27,21 @@
     box-sizing: border-box;
   }
 
+  .construction-banner {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 15px; /* Increase padding for better touch interaction */
+  }
+
+  .construction-banner p {
+    font-size: 1.2rem; /* Increase font size for readability */
+    margin-bottom: 10px; /* Add margin below the text */
+  }
+
+  .close-banner {
+    font-size: 2rem; /* Increase font size for better touch interaction */
+    padding: 10px; /* Increase padding for better touch interaction */
+  }
+
   .nav-links-container {
     display: none; /* Hide the navigation links by default */
     flex-direction: column;
@@ -164,6 +179,27 @@
     fill: variables.$text-white; /* Change color on hover */
   }
 
+  form#contact-form {
+    padding: 15px; /* Reduce padding for smaller screens */
+    max-width: 90%; /* Increase max-width for smaller screens */
+  }
+
+  form#contact-form label {
+    font-size: variables.$font-size-small; /* Adjust font size for smaller screens */
+  }
+
+  form#contact-form input,
+  form#contact-form textarea {
+    font-size: variables.$font-size-small; /* Adjust font size for smaller screens */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  form#contact-form .submit-btn {
+    font-size: variables.$font-size-small; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Reduce padding for smaller screens */
+  }
+
+
   #scrollToTopBtn {
     width: 50px; /* Adjust width for smaller screens */
     height: 50px; /* Adjust height for smaller screens */
@@ -183,6 +219,27 @@
   #dynamicGreeting {
     font-size: variables.$font-size-xlarge;
   }
+
+  form#contact-form {
+    padding: 10px; /* Further reduce padding for very small screens */
+    max-width: 95%; /* Increase max-width for very small screens */
+  }
+
+  form#contact-form label {
+    font-size: variables.$font-size-small; /* Adjust font size for very small screens */
+  }
+
+  form#contact-form input,
+  form#contact-form textarea {
+    font-size: variables.$font-size-small; /* Adjust font size for very small screens */
+    padding: 6px; /* Further reduce padding for very small screens */
+  }
+
+  form#contact-form .submit-btn {
+    font-size: variables.$font-size-small; /* Adjust font size for very small screens */
+    padding: 6px 12px; /* Further reduce padding for very small screens */
+  }
+
 
   section {
     padding: 5px;

@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dynamicGreeting.textContent = greeting;
 
-        // Highlight Active Nav Link
+    // Highlight Active Nav Link
     const navLinks = document.querySelectorAll('.nav-links a');
     const currentUrl = window.location.pathname;
 
@@ -73,12 +73,50 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.add('active');
         }
     });
-});
 
-// Toggle Navigation Menu
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinksContainer = document.querySelector('.nav-links-container');
+    // Toggle Navigation Menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links-container');
 
-menuToggle.addEventListener('click', () => {
-    navLinksContainer.classList.toggle('show');
-});
+    menuToggle.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('show');
+    });
+
+    // Close Construction Banner
+    const closeBannerBtn = document.getElementById('close-banner');
+    const constructionBanner = document.getElementById('construction-banner');
+
+    closeBannerBtn.addEventListener('click', () => {
+        constructionBanner.style.display = 'none';
+    });
+
+     // Form Submission Handling with EmailJS
+     const contactForm = document.getElementById('contact-form');
+     const emailInput = document.getElementById('email');
+     const emailError = document.getElementById('email-error');
+ 
+     contactForm.addEventListener('submit', (event) => {
+         event.preventDefault();
+ 
+         // Custom Email Validation
+         const emailValue = emailInput.value;
+         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ 
+         if (!emailPattern.test(emailValue)) {
+             emailError.textContent = 'Please enter a valid email address.';
+             emailError.style.display = 'block';
+             return;
+         } else {
+             emailError.style.display = 'none';
+         }
+ 
+         emailjs.sendForm('service_tdto3et', 'template_gcw63ck', contactForm)
+             .then(() => {
+                 alert('Thank you for your message!');
+                 contactForm.reset();
+             }, (error) => {
+                 alert('Failed to send message. Please try again later.');
+                 console.error('EmailJS error:', error);
+             });
+     });
+ });

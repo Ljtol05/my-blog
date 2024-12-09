@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Page">
+    <meta name="keywords" content="contact, form, email">
+    <meta name="author" content="Lamon Tolbert Jr">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="construction-banner" class="construction-banner">
+        <p>Thanks for visiting, this site is under construction.</p>
+        <button id="close-banner" class="close-banner" aria-label="Close banner">&times;</button>
+    </div>
+    <header>
+        <a href="../index.html">
+            <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
+        </a>
+        <nav class="nav-links">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776; <!-- Three horizontal lines (hamburger icon) -->
+            </button>
+            <div class="nav-links-container">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <div class="dropdown">
+                    <a href="blog.html">Blog</a>
+                    <div class="dropdown-content">
+                        <a href="./ellen_blog.html">Ellen Blog</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="active">Contact</a>
+            </div> 
+        </nav>
+    </header>
+    
+    <hr>
+
+    <!-- Contact Form Section -->
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <article>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                      <span class="error-message" id="email-error"></span>
+                   </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2024 Lamon Tolbert Jr's Blog. Address: Nashville, TN, 37207</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lamontolbertjr/" target="_blank" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
+            <path d="M4.98 3.5c0 1.38-1.11 2.5-2.49 2.5S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.13 24V7.98H4.8V24H.13zM9.69 7.98h4.31v2.16h.06c.6-1.14 2.07-2.35 4.26-2.35 4.55 0 5.39 2.89 5.39 6.64v7.57h-4.66v-6.7c0-1.6-.03-3.67-2.37-3.67-2.37 0-2.73 1.75-2.73 3.55v6.82H9.69V7.98z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/ljtol05" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.299-1.23 3.299-1.23.653 1.653.241 2.873.118 3.176.769.84 1.236 1.911 1.236 3.221 0 4.61-2.803 5.624-5.475 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l-10 10h6v10h8v-10h6z"/>
+        </svg>
+    </button>
+    
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("fH5BDXhCXh5P5PrWH"); // Replace "YOUR_USER_ID" with your actual EmailJS User ID
+       })();
+    </script>
+    <script src="../JavaScript/scripts.js"></script>
+</body>
+</html>

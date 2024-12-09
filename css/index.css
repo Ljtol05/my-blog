@@ -84,7 +84,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.9);
   min-width: 160px;
   box-shadow: 0 6px 12px rgba(0, 170, 255, 0.4);
-  z-index: 1;
+  z-index: 1000;
   top: 100%; /* Position below the dropdown link */
   left: 0;
 }
@@ -376,6 +376,43 @@ footer .social-links a:hover svg {
 
 /* Read More Button */
 /* Style for the Read More button */
+/* Construction Banner Styling */
+.construction-banner {
+  background-color: rgba(255, 165, 0, 0.9); /* Orange background with slight transparency */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it is on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.construction-banner p {
+  margin: 0;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.close-banner {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.close-banner:hover {
+  color: #ff4500; /* Darker orange on hover */
+}
+
 .read-more-btn {
   display: inline-block;
   margin-top: 10px;
@@ -427,6 +464,13 @@ footer .social-links a:hover svg {
   max-height: 1000px; /* Arbitrary large max-height to accommodate content */
 }
 
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  display: none; /* Hide by default */
+}
+
 #scrollToTopBtn {
   width: 60px; /* Increase width */
   height: 60px; /* Increase height */
@@ -465,6 +509,77 @@ footer .social-links a:hover svg {
   stroke: #00aaff; /* Change stroke color on click */
 }
 
+/* Contact Form Styling */
+form#contact-form {
+  background: rgba(255, 255, 255, 0.9); /* Light white background for readability */
+  border-radius: 10px; /* Smooth rounded corners */
+  padding: 20px; /* Add padding inside the form */
+  margin: 20px auto; /* Center the form and add space between form and other content */
+  box-shadow: 0 6px 12px rgba(0, 170, 255, 0.4); /* Subtle shadow for depth */
+  max-width: 600px; /* Limit the width of the form */
+}
+
+form#contact-form .form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+form#contact-form label {
+  display: block; /* Make labels block elements */
+  font-family: "Roboto", sans-serif; /* Use heading font */
+  font-size: 1.2rem; /* Adjust font size */
+  color: #00aaff; /* Electric blue color */
+  margin-bottom: 10px; /* Space below labels */
+}
+
+form#contact-form input,
+form#contact-form textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Add padding */
+  font-family: "Open Sans", sans-serif; /* Use body font */
+  font-size: 1rem; /* Adjust font size */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-bottom: 10px; /* Add space below inputs and textareas */
+}
+
+form#contact-form input:focus,
+form#contact-form textarea:focus {
+  border-color: #00aaff; /* Electric blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+form#contact-form .submit-btn {
+  display: inline-block;
+  background: #00aaff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 170, 255, 0.3); /* Light shadow for depth */
+}
+
+form#contact-form .submit-btn:hover {
+  background-color: #0088cc; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+  box-shadow: 0 6px 12px rgba(0, 170, 255, 0.4); /* Add a medium shadow on hover */
+}
+
+form#contact-form .submit-btn:active {
+  background-color: #006699; /* Even darker blue */
+  transform: scale(0.98); /* Slight shrink on click */
+}
+
+form#contact-form .submit-btn:focus {
+  outline: 1px dashed #cceeff;
+  outline-offset: 2px;
+}
+
 /* Import variables */
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
@@ -489,6 +604,18 @@ footer .social-links a:hover svg {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
+  }
+  .construction-banner {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 15px; /* Increase padding for better touch interaction */
+  }
+  .construction-banner p {
+    font-size: 1.2rem; /* Increase font size for readability */
+    margin-bottom: 10px; /* Add margin below the text */
+  }
+  .close-banner {
+    font-size: 2rem; /* Increase font size for better touch interaction */
+    padding: 10px; /* Increase padding for better touch interaction */
   }
   .nav-links-container {
     display: none; /* Hide the navigation links by default */
@@ -604,6 +731,22 @@ footer .social-links a:hover svg {
     transform: scale(1.2); /* Enlarge slightly on hover */
     fill: #ffffff; /* Change color on hover */
   }
+  form#contact-form {
+    padding: 15px; /* Reduce padding for smaller screens */
+    max-width: 90%; /* Increase max-width for smaller screens */
+  }
+  form#contact-form label {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  form#contact-form input,
+  form#contact-form textarea {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+  form#contact-form .submit-btn {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Reduce padding for smaller screens */
+  }
   #scrollToTopBtn {
     width: 50px; /* Adjust width for smaller screens */
     height: 50px; /* Adjust height for smaller screens */
@@ -619,6 +762,22 @@ footer .social-links a:hover svg {
 @media (max-width: 480px) {
   #dynamicGreeting {
     font-size: 1.8rem;
+  }
+  form#contact-form {
+    padding: 10px; /* Further reduce padding for very small screens */
+    max-width: 95%; /* Increase max-width for very small screens */
+  }
+  form#contact-form label {
+    font-size: 1rem; /* Adjust font size for very small screens */
+  }
+  form#contact-form input,
+  form#contact-form textarea {
+    font-size: 1rem; /* Adjust font size for very small screens */
+    padding: 6px; /* Further reduce padding for very small screens */
+  }
+  form#contact-form .submit-btn {
+    font-size: 1rem; /* Adjust font size for very small screens */
+    padding: 6px 12px; /* Further reduce padding for very small screens */
   }
   section {
     padding: 5px;
