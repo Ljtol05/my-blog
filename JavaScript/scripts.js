@@ -109,6 +109,11 @@ document.addEventListener("DOMContentLoaded", () => {
          } else {
              emailError.style.display = 'none';
          }
+
+         // Add static parameters for 'to_name'
+        const params = {
+           to_name: "Lamon Tolbert Jr", // Replace with your name
+         };
  
          emailjs.sendForm('service_tdto3et', 'template_gcw63ck', contactForm)
              .then(() => {
