@@ -45,6 +45,20 @@ header .nav-links a.active {
   border-color: variables.$primary-color; /* Highlight border color */
 }
 
+/* Responsive Navigation Menu */
+.nav-links-container {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.menu-toggle {
+  display: none; /* Hide the menu toggle button by default */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* Horizontal Rule */
 hr {
   margin: 20px auto;

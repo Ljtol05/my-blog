@@ -17,15 +17,20 @@
             <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
         </a>
         <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About Me</a>
-          <div class="dropdown">
-            <a href="blog.html">Blog</a>
-            <div class="dropdown-content">
-                <a href="ellen_blog.html">Ellen Blog</a>
-            </div>
-        </div>
-          <a href="contact.html">Contact</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776; <!-- Three horizontal lines (hamburger icon) -->
+            </button>
+            <div class="nav-links-container">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <div class="dropdown">
+                    <a href="blog.html">Blog</a>
+                    <div class="dropdown-content">
+                        <a href="ellen_blog.html">Ellen Blog</a>
+                    </div>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div> 
         </nav>
     </header>
     
@@ -112,8 +117,13 @@
     </a>
   </div>
 </footer>
+
  <!-- Scroll to Top Button -->
- <button id="scrollToTopBtn">&#8679; UP</button>
+ <button id="scrollToTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l-10 10h6v10h8v-10h6z"/>
+    </svg>
+  </button>
     
 <script src="../JavaScript/scripts.js"></script>
 </body>

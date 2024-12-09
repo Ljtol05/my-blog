@@ -1,0 +1,75 @@
+@use './variables';
+
+.content-block {
+  display: flex; /* Align text and image side by side */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center vertically */
+  margin: 20px auto; /* Add spacing between blocks */
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limit the width of the block */
+  background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+  border-radius: variables.$radius-medium;
+  box-shadow: variables.$box-shadow-medium;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: variables.$box-shadow-heavy;
+  }
+
+  .text-content {
+    flex: 1; /* Allow text to take up more space */
+    margin-right: 20px; /* Add spacing between text and image */
+    color: variables.$text-dark;
+
+    h2 {
+      font-family: variables.$font-heading;
+      font-size: variables.$font-size-large;
+      color: variables.$primary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: variables.$font-body;
+      font-size: variables.$font-size-medium;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .read-more-btn {
+      display: inline-block;
+      background: variables.$primary-color;
+      color: variables.$text-white;
+      padding: 10px 20px;
+      border-radius: variables.$radius-small;
+      text-decoration: none;
+      transition: variables.$hover-effect-transition;
+
+      &:hover {
+        background: variables.$hover-glow;
+        color: variables.$text-white;
+      }
+    }
+  }
+
+  .image-content {
+    flex: 0 0 40%; /* Restrict the image container width to 40% */
+    display: flex;
+    justify-content: center; /* Center-align the image */
+    align-items: center;
+
+    img {
+      max-width: 100%; /* Make the image responsive */
+      height: auto;
+      border-radius: variables.$radius-small;
+      box-shadow: variables.$box-shadow-light;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: variables.$box-shadow-heavy;
+      }
+    }
+  }
+}

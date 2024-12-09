@@ -1,27 +1,34 @@
 // Color Variables
-$primary-color: #00d4ff; // Electric Blue
-$secondary-color: #e76f51; // Reddish Orange
-$background-overlay: rgba(0, 0, 0, 0.6); // Semi-transparent black
-$hover-glow: rgba(255, 255, 255, 0.2); // Subtle white glow
-$text-white: #ffffff; // White
-$text-dark: #333; // Dark Gray
-$background-overlay-mobile: rgba(0, 0, 0, 0.5); // Semi-transparent black for mobile
-$section-background-mobile: rgba(255, 255, 255, 0.9); // White semi-transparent background for mobile
-$nav-links-background: rgba(0, 0, 0, 0.8); // Background for nav links
-$nav-links-hover-background: rgba(255, 255, 255, 0.1); // Hover background for nav links
+$primary-color: #00aaff; // Vibrant Blue for contrast against dark background
+$secondary-color: #ffaa00; // Warm Orange for accents
+$background-overlay: rgba(0, 0, 0, 0.8); // Darker semi-transparent black
+$hover-glow: rgba(0, 170, 255, 0.2); // Subtle blue glow for hover effects
+$text-white: #ffffff; // Pure white for text on dark background
+$text-dark: #333333; // Light Gray for less important text
+$accent-color: #00ffaa; // Soft green accent color
+$gradient-color: linear-gradient(120deg, #005f99, #003366, #001a33); // Dark blue gradient
+$background-overlay-mobile: rgba(0, 0, 0, 0.7); // Darker semi-transparent black for mobile
+$section-background-mobile: rgba(0, 0, 0, 0.9); // Darker semi-transparent background for mobile
+$nav-links-background: rgba(0, 0, 0, 0.9); // Darker background for nav links
+$nav-links-hover-background: rgba(0, 170, 255, 0.1); // Hover background for nav links
+
+// Hover Effects
+$hover-effect-color: rgba(0, 170, 255, 0.8); // Subtle blue hover
+$hover-effect-transform: scale(1.05); // Slight enlargement
+$hover-effect-transition: all 0.3s ease; // Smooth transition
 
 // Font Variables
-$font-heading: 'Bebas Neue', sans-serif;
-$font-body: 'Lora', serif;
+$font-heading: 'Roboto', sans-serif; // Modern sans-serif font
+$font-body: 'Open Sans', sans-serif; // Clean sans-serif font
 $font-size-small: 1rem; // Small font size for mobile
 $font-size-medium: 1.2rem; // Medium font size for mobile
 $font-size-large: 1.5rem; // Large font size for mobile
 $font-size-xlarge: 1.8rem; // Extra large font size for mobile
 
 // Box Shadow Variables
-$box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3); // Light Shadow
-$box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2); // Medium Shadow
-$box-shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.4); // Heavy shadow
+$box-shadow-light: 0 4px 6px rgba(0, 170, 255, 0.3); // Light Blue Shadow
+$box-shadow-medium: 0 6px 12px rgba(0, 170, 255, 0.4); // Medium Blue Shadow
+$box-shadow-heavy: 0 8px 16px rgba(0, 170, 255, 0.5); // Heavy Blue Shadow
 
 // Border Radius Variables
 $radius-small: 5px;
@@ -29,22 +36,22 @@ $radius-medium: 8px;
 $radius-large: 10px; // Added large radius
 
 // Additional Variables
-$blockquote-background: rgba(0, 0, 0, 0.6); // Semi-transparent black for blockquote
-$blockquote-border: 5px solid $primary-color; // Electric blue border for blockquote
-$blockquote-hover-background: rgba(0, 212, 255, 0.2); // Slight glow on hover for blockquote
-$blockquote-hover-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); // Brighter shadow on hover for blockquote
+$blockquote-background: rgba(0, 0, 0, 0.8); // Darker semi-transparent black for blockquote
+$blockquote-border: 5px solid $primary-color; // Blue border for blockquote
+$blockquote-hover-background: rgba(0, 170, 255, 0.2); // Slight glow on hover for blockquote
+$blockquote-hover-shadow: 0 6px 12px rgba(0, 170, 255, 0.4); // Brighter shadow on hover for blockquote
 
 // Section Variables
-$section-background: rgba(0, 0, 0, 0.7); // Semi-transparent black for section background
+$section-background: rgba(0, 0, 0, 0.9); // Darker semi-transparent black for section background
 $section-text-color: $text-white; // White text for readability
-$section-border: 1px solid rgba(255, 255, 255, 0.2); // Subtle border for contrast
+$section-border: 1px solid rgba(0, 170, 255, 0.2); // Subtle blue border for contrast
 
 // Heading Variables
 $heading-font-family: $font-heading; // Font family for headings
 $heading-font-size: 40px; // Font size for h2 headings
-$heading-color: $secondary-color; // Color for h2 headings
+$heading-color: $primary-color; // Blue color for h2 headings
 
 // Dynamic Greeting Variables
 $dynamic-greeting-font-size: 2rem; // Font size for dynamic greeting
 $dynamic-greeting-letter-spacing: 2px; // Letter spacing for dynamic greeting
-$dynamic-greeting-text-shadow: 0 0 2px rgba(0, 212, 255, 0.7), 0 0 15px rgba(0, 212, 255, 0.5); // Neon glow effect for dynamic greeting
+$dynamic-greeting-text-shadow: 0 0 2px rgba(0, 170, 255, 0.7), 0 0 15px rgba(0, 170, 255, 0.5); // Neon glow effect for dynamic greeting

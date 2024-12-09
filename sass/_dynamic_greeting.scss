@@ -3,7 +3,7 @@
 /* Dynamic Greeting Styling */
 #dynamicGreeting {
   font-family: variables.$font-heading; /* Creative font */
-  color: variables.$primary-color; /* Electric blue color */
+  color: variables.$text-white; /* Electric blue color */
   font-size: variables.$dynamic-greeting-font-size; /* Adjust font size */
   font-weight: bold; /* Make it stand out */
   margin: 0 auto; /* Center the element */
@@ -11,14 +11,14 @@
   text-shadow: variables.$dynamic-greeting-text-shadow; /* Neon glow effect */
   text-align: center;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  box-shadow: variables.$box-shadow-light;
+  background-color: transparent; // Semi-transparent dark background for contrast
+  border-radius: variables.$radius-small; /* Rounded corners */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #dynamicGreeting:hover {
-  transform: translateY(-5px);
+  transform: variables.$hover-effect-transform; /* Slight lift on hover */
+  text-shadow: 0 0 4px rgba(120, 120, 120, 0.8), 0 0 20px rgba(200, 200, 200, 0.6); // Slightly brighter gray glow on hover;
   box-shadow: variables.$box-shadow-heavy;
 }
 

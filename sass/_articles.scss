@@ -72,7 +72,7 @@ blockquote {
   font-family: variables.$font-body; /* Matches the article's creative font */
   font-size: 1.5rem; /* Slightly larger font for emphasis */
   font-style: italic; /* Retain the traditional italic look of quotes */
-  color: variables.$text-white; /* Bright white text for readability */
+  color: variables.$secondary-color; /* Bright white text for readability */
   background-color: variables.$blockquote-background; /* Semi-transparent black background */
   border-left: variables.$blockquote-border; /* Electric blue left border for emphasis */
   padding: 15px 20px; /* Add padding for spacing inside the blockquote */

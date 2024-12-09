@@ -12,59 +12,66 @@
     <title>My Blog Page</title>
 </head>
 <body>
-  <header>
-    <a href="index.html">
-        <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
-    </a>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <div class="dropdown">
-            <a href="blog.html">Blog</a>
-            <div class="dropdown-content">
-                <a href="sub-directory/ellen_blog.html">Ellen Blog</a>
-            </div>
-        </div>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <a href="/index.html">
+            <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
+        </a>
+        <nav class="nav-links">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776; <!-- Three horizontal lines (hamburger icon) -->
+            </button>
+            <div class="nav-links-container">
+                <a href="/index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <div class="dropdown">
+                    <a href="blog.html">Blog</a>
+                    <div class="dropdown-content">
+                        <a href="./sub-directory/ellen_blog.html">Ellen Blog</a>
+                    </div>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div> 
+        </nav>
+    </header>
 
     <hr>
 
     <!-- Main Content -->
     <main>
         <!-- Introduction Section -->
-        <section>
-            <h2>Welcome to My Blog</h2>
-            <article>
-                <p>
-                    <strong>Hello!</strong> My name is <em>Lamon Tolbert Jr</em>, a passionate lover of <strong>God</strong>, Web Development and bloging! This platform will allow me to share thoughts and ideas with the world. On this blog, you'll find a variety of posts about my experiences, interests, and insights.
-                </p>
-                <p class="read-more-content">
-                    <em>Feel free to explore</em> and read through my posts. I hope you find something that resonates with you. Thank you for visiting, <em>Enjoy</em>!
-                </p>
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
+        <section class="content-block">
+            <div class="text-content">
+                <h2>Welcome to My Blog</h2>
+                <article>
+                    <p>
+                        <strong>Hello!</strong> My name is <em>Lamon Tolbert Jr</em>, a passionate lover of <strong>God</strong>, Web Development and bloging! This platform will allow me to share thoughts and ideas with the world. On this blog, you'll find a variety of posts about my experiences, interests, and insights.
+                    </p>
+                    <p class="read-more-content">
+                        <em>Feel free to explore</em> and read through my posts. I hope you find something that resonates with you. Thank you for visiting, <em>Enjoy</em>!
+                    </p>
+                    <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </article>
+            </div>
+            <div class="image-content">
                 <img src="home-placeholder" data-src="./images/home_photo.jpg" alt="My Home Photo" class="featured-image lazy" loading="lazy">
-            </article>
+            </div>
         </section>
 
         <!-- Featured Blog Posts Section -->
-        <section>
-            <h2>Featured Blog Posts</h2>
-            <article>
-                <h3>My <em>Ellen</em> Experience!</h3>
-                <p>
-                    <strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.
-                </p>
-                <a href="./sub-directory/ellen_blog.html" class="read-more-btn">Read More</a>
-            </article>
-            <article>
-                <h3>Blog Post Title 2</h3>
-                <p>
-                    <strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.
-                </p>
-                <a href="blog-post-2.html"class="read-more-btn">Read More</a>
-            </article>
+        <section class="content-block">
+            <div class="text-content">
+                <h2>Featured Blog Posts</h2>
+                <article>
+                    <h3>My <em>Ellen</em> Experience!</h3>
+                    <p>
+                        <strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.
+                    </p>
+                    <a href="sub-directory/ellen_blog.html" class="read-more-btn">Read More</a>
+                </article>
+            </div>
+            <div class="image-content">
+                <img src="Ellen-placeholder" data-src="./images/Ellen.jpg" alt="My Home Photo" class="featured-image lazy" loading="lazy">
+            </div>
         </section>
     </main>
 
@@ -78,21 +85,20 @@
               <path d="M4.98 3.5c0 1.38-1.11 2.5-2.49 2.5S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.13 24V7.98H4.8V24H.13zM9.69 7.98h4.31v2.16h.06c.6-1.14 2.07-2.35 4.26-2.35 4.55 0 5.39 2.89 5.39 6.64v7.57h-4.66v-6.7c0-1.6-.03-3.67-2.37-3.67-2.37 0-2.73 1.75-2.73 3.55v6.82H9.69V7.98z"/>
             </svg>
           </a>
-          <a href="https://x.com/" target="_blank" title="Twitter">
+          <a href="https://github.com/ljtol05" target="_blank" title="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-              <path d="M24 4.557a9.832 9.832 0 01-2.828.775 4.933 4.933 0 002.165-2.724 9.869 9.869 0 01-3.127 1.195 4.924 4.924 0 00-8.384 4.482C7.691 7.723 4.066 5.794 1.64 2.92a4.92 4.92 0 001.523 6.573A4.902 4.902 0 01.964 8.79v.062a4.922 4.922 0 003.95 4.827 4.904 4.904 0 01-2.224.084 4.926 4.926 0 004.604 3.417 9.866 9.866 0 01-6.102 2.104c-.396 0-.788-.023-1.176-.069A13.94 13.94 0 007.548 22c9.058 0 14.01-7.513 14.01-14.02 0-.213-.004-.426-.014-.637A10.03 10.03 0 0024 4.557z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.299-1.23 3.299-1.23.653 1.653.241 2.873.118 3.176.769.84 1.236 1.911 1.236 3.221 0 4.61-2.803 5.624-5.475 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
             </svg>
-          </a>
-          <a href="https://www.facebook.com/?_rdr" target="_blank" title="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-                  <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.81V14.709h-3.42v-3.62h3.42V8.392c0-3.39 2.064-5.233 5.084-5.233 1.439 0 2.676.107 3.037.155v3.526h-2.085c-1.634 0-1.951.776-1.951 1.915v10.15h4.66V14.71c0-1.6-.03-3.67-2.37-3.67-2.37 0-2.73 1.75-2.73 3.55v6.82H9.69V7.98z"/>
-              </svg>
           </a>
         </div>
       </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn">&#8679; UP</button>
+    <button id="scrollToTopBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l-10 10h6v10h8v-10h6z"/>
+        </svg>
+      </button>
 
     <script src="./JavaScript/scripts.js"></script>
 </body>

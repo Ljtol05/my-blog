@@ -64,13 +64,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dynamicGreeting.textContent = greeting;
 
-    // Highlight Active Nav Link
+        // Highlight Active Nav Link
     const navLinks = document.querySelectorAll('.nav-links a');
-    const currentUrl = window.location.href;
+    const currentUrl = window.location.pathname;
 
     navLinks.forEach(link => {
-        if (link.href === currentUrl) {
+        if (link.pathname === currentUrl) {
             link.classList.add('active');
         }
     });
+});
+
+// Toggle Navigation Menu
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinksContainer = document.querySelector('.nav-links-container');
+
+menuToggle.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('show');
 });
