@@ -90,38 +90,42 @@ document.addEventListener("DOMContentLoaded", () => {
         constructionBanner.style.display = 'none';
     });
 
-     // Form Submission Handling with EmailJS
-     const contactForm = document.getElementById('contact-form');
-     const emailInput = document.getElementById('email');
-     const emailError = document.getElementById('email-error');
- 
-     contactForm.addEventListener('submit', (event) => {
-         event.preventDefault();
- 
-         // Custom Email Validation
-         const emailValue = emailInput.value;
-         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
- 
-         if (!emailPattern.test(emailValue)) {
-             emailError.textContent = 'Please enter a valid email address.';
-             emailError.style.display = 'block';
-             return;
-         } else {
-             emailError.style.display = 'none';
-         }
+    // Form Submission Handling with EmailJS
+    const contactForm = document.getElementById('contact-form');
+    const emailInput = document.getElementById('reply_to');
+    const emailError = document.getElementById('email-error');
 
-         // Add static parameters for 'to_name'
-        const params = {
-           to_name: "Lamon Tolbert Jr", // Replace with your name
-         };
- 
-         emailjs.sendForm('service_tdto3et', 'template_gcw63ck', contactForm)
-             .then(() => {
-                 alert('Thank you for your message!');
-                 contactForm.reset();
-             }, (error) => {
-                 alert('Failed to send message. Please try again later.');
-                 console.error('EmailJS error:', error);
-             });
-     });
- });
+    if (contactForm && emailInput && emailError) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            // Custom Email Validation
+            const emailValue = emailInput.value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(emailValue)) {
+                emailError.textContent = 'Please enter a valid email address.';
+                emailError.style.display = 'block';
+                return;
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Add static parameters for 'to_name'
+            const params = {
+                to_name: "Lamon Tolbert Jr", // Replace with your name
+            };
+
+            emailjs.sendForm('service_tdto3et', 'template_gcw63ck', contactForm, params)
+                .then(() => {
+                    alert('Thank you for your message!');
+                    contactForm.reset();
+                }, (error) => {
+                    alert('Failed to send message. Please try again later.');
+                    console.error('EmailJS error:', error);
+                });
+        });
+    } else {
+        console.error('Form elements not found');
+    }
+});

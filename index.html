@@ -17,25 +17,25 @@
         <button id="close-banner" class="close-banner" aria-label="Close banner">&times;</button>
     </div>
     <!-- Rest of your content -->
-    <header class="container-fluid bg-dark text-white py-3">
+    <header class="container-fluid bg-light text-black py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="index.html" class="text-white">
                 <p id="dynamicGreeting" class="mb-0"></p> <!-- Dynamic Greeting Placeholder -->
             </a>
             <nav class="nav-links">
-                <button class="menu-toggle btn btn-outline-light d-md-none" aria-label="Toggle navigation">
+                <button class="menu-toggle btn btn-outline-dark d-md-none" aria-label="Toggle navigation">
                     &#9776; <!-- Three horizontal lines (hamburger icon) -->
                 </button>
                 <div class="nav-links-container d-none d-md-flex">
-                    <a href="index.html" class="nav-link text-white">Home</a>
-                    <a href="about.html" class="nav-link text-white">About Me</a>
+                    <a href="index.html" class="nav-link text-dark-shadow">Home</a>
+                    <a href="about.html" class="nav-link text-dark-shadow">About Me</a>
                     <div class="dropdown">
-                        <a href="blog.html" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu">
-                            <a href="./sub-directory/ellen_blog.html" class="dropdown-item">Ellen Blog</a>
-                        </div>
+                        <a href="#" class="nav-link text-dark-shadow dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="./sub-directory/ellen_blog.html" class="dropdown-item">Ellen Blog</a></li>
+                        </ul>
                     </div>
-                    <a href="./sub-directory/contact.html" class="nav-link text-white">Contact</a>
+                    <a href="./sub-directory/contact.html" class="nav-link text-dark-shadow">Contact</a>
                 </div>
             </nav>
         </div>
@@ -71,11 +71,11 @@
         <h2>Featured Blog Posts</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card square-card">
                     <img src="Ellen-placeholder" data-src="./images/Ellen.jpg" alt="Ellen Blog" class="card-img-top lazy img-fluid" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title">My <em>Ellen</em> Experience!</h5>
-                        <p class="card-title"><strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.</p>
+                        <p class="card-text"><strong>Excerpt:</strong> This is a brief excerpt from the blog post. Click to read more.</p>
                         <a href="sub-directory/ellen_blog.html" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
 
     <hr>
 
-    <footer class="container-fluid bg-dark text-white py-3">
+    <footer class="container-fluid bg-light text-white py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <p class="mb-0">&copy; 2024 Lamon Tolbert Jr's Blog. Address: Nashville, TN, 37207</p>
             <div class="social-links">

@@ -2,30 +2,24 @@
 
 /* Dynamic Greeting Styling */
 #dynamicGreeting {
-  font-family: variables.$font-heading; /* Creative font */
-  color: variables.$text-white; /* Electric blue color */
-  font-size: variables.$dynamic-greeting-font-size; /* Adjust font size */
+  font-family: variables.$font-heading; /* Use a modern font */
+  font-size: 2.5rem; /* Increase font size */
   font-weight: bold; /* Make it stand out */
-  margin: 0 auto; /* Center the element */
-  letter-spacing: variables.$dynamic-greeting-letter-spacing; /* Add spacing between letters */
-  text-shadow: variables.$dynamic-greeting-text-shadow; /* Neon glow effect */
-  text-align: center;
-  padding: 10px;
-  background-color: transparent; // Semi-transparent dark background for contrast
-  border-radius: variables.$radius-small; /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: variables.$text-dark; /* Vibrant Blue */
+  text-align: center; /* Center align */
+  margin: 20px auto; /* Add margin to space it out */
+  padding: 10px 20px; /* Add padding for better spacing */
+  background: linear-gradient(120deg, #005f99, #003366); /* Gradient background */
+  color: variables.$text-white; /* White text color for contrast */
+  border-radius: variables.$radius-large; /* Rounded corners */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(0, 170, 255, 0.4); /* Subtle shadow/glow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
+/* Hover Effect */
 #dynamicGreeting:hover {
-  transform: variables.$hover-effect-transform; /* Slight lift on hover */
-  text-shadow: 0 0 4px rgba(120, 120, 120, 0.8), 0 0 20px rgba(200, 200, 200, 0.6); // Slightly brighter gray glow on hover;
-  box-shadow: variables.$box-shadow-heavy;
-}
-
-a {
-  text-decoration: none; /* Remove underline from links */
-}
-
-a:hover {
-  text-decoration: none; /* Ensure no underline on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 170, 255, 0.6); /* Enhance shadow on hover */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 170, 255, 0.7); /* Brighter glow */
 }

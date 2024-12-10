@@ -1,16 +1,29 @@
+@use './variables';
+
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 
   // Background styles
-  background-image: url('../images/blog2.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background: variables.$background-color; // Fallback gradient color
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+}
 
-  // Optionally, you could use variables for these settings if applicable
-  // Example:
-  // background-color: variables.$background-color; // For fallback
+// Constellation overlay
+body::before {
+  content: '';
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><line x1="0" y1="0" x2="40" y2="0" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><line x1="0" y1="0" x2="0" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><line x1="40" y1="0" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><line x1="0" y1="40" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>');
+  background-size: 40px 40px; // Controls the size of the grid cells
+  pointer-events: none; // Ensures it doesn’t interfere with user interactions
+  opacity: variables.$constellation-opacity;
 }

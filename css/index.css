@@ -12020,11 +12020,25 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url("../images/blog2.jpg");
+  background: linear-gradient(to bottom, #1A2980, #26D0CE);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><line x1="0" y1="0" x2="40" y2="0" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><line x1="0" y1="0" x2="0" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><line x1="40" y1="0" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><line x1="0" y1="40" x2="40" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>');
+  background-size: 40px 40px;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .iframe-container {
@@ -12061,32 +12075,26 @@ body, html {
 
 /* Dynamic Greeting Styling */
 #dynamicGreeting {
-  font-family: "Roboto", sans-serif; /* Creative font */
-  color: #ffffff; /* Electric blue color */
-  font-size: 2rem; /* Adjust font size */
+  font-family: "Roboto", sans-serif; /* Use a modern font */
+  font-size: 2.5rem; /* Increase font size */
   font-weight: bold; /* Make it stand out */
-  margin: 0 auto; /* Center the element */
-  letter-spacing: 2px; /* Add spacing between letters */
-  text-shadow: 0 0 2px rgba(0, 170, 255, 0.7), 0 0 15px rgba(0, 170, 255, 0.5); /* Neon glow effect */
-  text-align: center;
-  padding: 10px;
-  background-color: transparent;
-  border-radius: 5px; /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333333; /* Vibrant Blue */
+  text-align: center; /* Center align */
+  margin: 20px auto; /* Add margin to space it out */
+  padding: 10px 20px; /* Add padding for better spacing */
+  background: linear-gradient(120deg, #005f99, #003366); /* Gradient background */
+  color: #ffffff; /* White text color for contrast */
+  border-radius: 10px; /* Rounded corners */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(0, 170, 255, 0.4); /* Subtle shadow/glow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
+/* Hover Effect */
 #dynamicGreeting:hover {
-  transform: scale(1.05); /* Slight lift on hover */
-  text-shadow: 0 0 4px rgba(120, 120, 120, 0.8), 0 0 20px rgba(200, 200, 200, 0.6);
-  box-shadow: 0 8px 16px rgba(0, 170, 255, 0.5);
-}
-
-a {
-  text-decoration: none; /* Remove underline from links */
-}
-
-a:hover {
-  text-decoration: none; /* Ensure no underline on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 170, 255, 0.6); /* Enhance shadow on hover */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 170, 255, 0.7); /* Brighter glow */
 }
 
 /* Dropdown Menu Styling */
@@ -12144,7 +12152,7 @@ header .nav-links {
 /* Individual link styling */
 header .nav-links a {
   text-decoration: none; /* Remove underline */
-  color: #00aaff; /* Electric blue for links */
+  color: 33, 37, 41; /* Electric blue for links */
   font-size: 1.2rem; /* Slightly larger font size for visibility */
   font-family: "Roboto", sans-serif; /* Modern font */
   padding: 8px 15px; /* Add padding around the links */
@@ -12165,20 +12173,6 @@ header .nav-links a.active {
   background-color: #00aaff; /* Highlight background color */
   color: #ffffff; /* Highlight text color */
   border-color: #00aaff; /* Highlight border color */
-}
-
-/* Responsive Navigation Menu */
-.nav-links-container {
-  display: flex;
-  gap: 20px; /* Space between links */
-}
-
-.menu-toggle {
-  display: none; /* Hide the menu toggle button by default */
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
 }
 
 /* Horizontal Rule */
@@ -12686,6 +12680,7 @@ form#contact-form .submit-btn:focus {
   }
   #dynamicGreeting {
     font-size: 1.8rem; /* Adjust font size for smaller screens */
+    padding: 8px 15px; /* Adjust padding for smaller screens */
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -12821,5 +12816,68 @@ form#contact-form .submit-btn:focus {
   footer .social-links a svg {
     width: 25px; /* Maintain smaller icon size */
     height: 25px;
+  }
+}
+/* Remove underline for all links */
+a {
+  text-decoration: none; /* Removes the underline */
+}
+
+/* Add hover effect for better interactivity */
+a:hover {
+  text-decoration: underline; /* Adds an underline on hover */
+  color: #00aaff; /* Optional: Change color on hover */
+}
+
+/* Specific styling for header links */
+header a {
+  text-decoration: none; /* Ensure header links have no underline */
+  color: #ffffff; /* White text for contrast */
+}
+
+header a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: #00aaff; /* Change color on hover */
+}
+
+.text-dark-shadow {
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.7), 0 0 15px rgba(51, 51, 51, 0.5) !important;
+}
+
+square-card {
+  width: 300px; /* Fixed width for consistency */
+  height: 300px; /* Fixed height for a square design */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden; /* Crop any overflow content */
+}
+
+.square-card .card-img-top {
+  height: 50%; /* Adjust height to match the card's proportions */
+  -o-object-fit: cover;
+     object-fit: cover; /* Maintain aspect ratio while cropping */
+}
+
+.square-card .card-body {
+  padding: 1rem; /* Customize padding */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.square-card .btn-primary {
+  background-color: #00aaff; /* Customize button color */
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .square-card {
+    width: 100%; /* Full width for small screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 1rem; /* Add spacing between cards */
+  }
+  .square-card .card-img-top {
+    height: auto; /* Let the image resize dynamically */
+  }
+  .square-card .card-body {
+    padding: 0.5rem; /* Reduce padding for better fit */
   }
 }/*# sourceMappingURL=index.css.map */

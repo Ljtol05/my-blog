@@ -22,7 +22,7 @@ header .nav-links {
 /* Individual link styling */
 header .nav-links a {
   text-decoration: none; /* Remove underline */
-  color: variables.$primary-color; /* Electric blue for links */
+  color: variables.$nav-link-color; /* Electric blue for links */
   font-size: 1.2rem; /* Slightly larger font size for visibility */
   font-family: variables.$font-heading; /* Modern font */
   padding: 8px 15px; /* Add padding around the links */
@@ -43,20 +43,6 @@ header .nav-links a.active {
   background-color: variables.$primary-color; /* Highlight background color */
   color: variables.$text-white; /* Highlight text color */
   border-color: variables.$primary-color; /* Highlight border color */
-}
-
-/* Responsive Navigation Menu */
-.nav-links-container {
-  display: flex;
-  gap: 20px; /* Space between links */
-}
-
-.menu-toggle {
-  display: none; /* Hide the menu toggle button by default */
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
 }
 
 /* Horizontal Rule */
