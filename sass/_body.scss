@@ -6,7 +6,7 @@ body, html {
   overflow-x: hidden;
 
   // Background styles
-  background: variables.$background-color; // Fallback gradient color
+  background: variables.$bg-gradient-color: // Fallback gradient color
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
