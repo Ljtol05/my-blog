@@ -1,6 +1,6 @@
 # 🌟 A Motivational Blog
 
-A motivational blog created by me! This is my first step into the exciting world of web development, where I'm experimenting with **HTML**, **CSS**, and **JavaScript** while learning through **Devslopes**. It’s a fun, creative project aimed at sharing positivity and inspiration.
+A motivational blog created by me! This is my first step into the exciting world of web development, where I'm experimenting with **HTML**, **CSS**, **SASS**, **BootStrap** and **JavaScript** while learning through **Devslopes**. It’s a fun, creative project aimed at sharing positivity and inspiration.
 
 [🌐 **Visit the Blog**](http://ljtol05.github.io/my-blog/)
 
@@ -43,6 +43,9 @@ This project is a simple motivational blog designed to:
 - **CSS**: Adding styles for aesthetics and layout.
 - **JavaScript**: For interactive features (more planned for future updates).
 - **GitHub Pages**: Hosting the live website.
+- **BootStrap**: Structured Framework (Boost Productivity)
+- **SASS**: Organizing CSS into Partials
+
 
 ---
 
