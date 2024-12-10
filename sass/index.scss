@@ -1,14 +1,1 @@
-@use './variables';
-@use './variables-dark';
-@use './body';
-@use './iframe_container';
-@use './dynamic_greeting';
-@use './_drop_down';
-@use './header';
-@use './articles';
-@use './content_block';
-@use './footer';
-@use './buttons';
-@use './contact_form';
-@use './media_queries';
-@use './custom_styles'; // Import custom styles
+@use './custom_bs_styles'; // Import custom styles

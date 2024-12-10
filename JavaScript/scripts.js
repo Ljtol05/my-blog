@@ -128,4 +128,38 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         console.error('Form elements not found');
     }
+
+// Custom JavaScript for My Blog
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Handle Navbar Toggler for Mobile View
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+  
+    if (navbarToggler && navbarCollapse) {
+      navbarToggler.addEventListener('click', () => {
+        navbarCollapse.classList.toggle('show');
+      });
+    }
+  
+    // Example: Triggering a Bootstrap Modal
+    const exampleModalTrigger = document.querySelector('#exampleModalTrigger');
+    if (exampleModalTrigger) {
+      exampleModalTrigger.addEventListener('click', () => {
+        const exampleModal = new bootstrap.Modal(document.querySelector('#exampleModal'));
+        exampleModal.show();
+      });
+    }
+  
+    // Example: Initialize All Tooltips
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  
+    // Example: Initialize All Popovers
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
 });
