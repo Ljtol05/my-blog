@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Blog Page">
-    <meta name="keywords" content="blog, posts, articles">
-    <meta name="author" content="Lamon Tolbert Jr">
-    <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <title>My Blog Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lj's Blog">
+  <meta name="keywords" content="blog, posts, articles">
+  <meta name="author" content="Lamon Tolbert Jr">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Lj's Blog</title>
+  <link rel="stylesheet" href="/css/index.css"> <!-- Your compiled CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"> <!-- For social icons -->
 </head>
 <body>
-    <div id="construction-banner" class="construction-banner">
-        <p>Thanks for visiting, this site is under construction.</p>
-        <button id="close-banner" class="close-banner" aria-label="Close banner">&times;</button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">Lj's Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sub-directory/contact.html">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/sub-directory/ellen_blog.html">Ellen Blog</a></li>
+                <li><a class="dropdown-item" href="/sub-directory/tech_blog.html">Tech Blog</a></li>
+                <li><a class="dropdown-item" href="/sub-directory/lifestyle_blog.html">Lifestyle Blog</a></li>
+            </ul>
+        </li>
+        </ul>
+      </div>
     </div>
-    <header>
-        <a href="/index.html">
-            <p id="dynamicGreeting"></p> <!-- Dynamic Greeting Placeholder -->
-        </a>
-        <nav class="nav-links">
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                &#9776; <!-- Three horizontal lines (hamburger icon) -->
-            </button>
-            <div class="nav-links-container">
-                <a href="/index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <div class="dropdown">
-                    <a href="blog.html">Blog</a>
-                    <div class="dropdown-content">
-                        <a href="ellen_blog.html">Ellen Blog</a>
-                    </div>
-                </div>
-                <a href="contact.html">Contact</a>
-            </div> 
-        </nav>
-    </header>
+  </nav>
     
     <hr>
 
