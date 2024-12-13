@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="bg-light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lj's Blog">
   <meta name="keywords" content="blog, posts, articles">
-  <meta name="author" content="Lamon Tolbert Jr">
+  <meta name="author" content="Lamont Tolbert Jr">
   <meta name="robots" content="noindex, nofollow">
   <title>Lj's Blog</title>
   <link rel="stylesheet" href="../css/index.css"> <!-- Your compiled CSS -->
@@ -13,119 +13,130 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"> <!-- For social icons -->
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">Lj's Blog</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Blog
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="ellen_blog.html">Ellen Blog</a></li>
-                <li><a class="dropdown-item" href="/sub-directory/tech_blog.html">Tech Blog</a></li>
-                <li><a class="dropdown-item" href="/sub-directory/lifestyle_blog.html">Lifestyle Blog</a></li>
-            </ul>
-        </li>
-        </ul>
+  <div class="container">
+    <header class="border-bottom lh-1 py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="link-secondary" href="#">Subscribe</a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-body-emphasis text-decoration-none" href="/index.html">Lj's Blog</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+          <a class="link-secondary" href="#" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24">
+              <title>Search</title>
+              <circle cx="10.5" cy="10.5" r="7.5"></circle>
+              <path d="M21 21l-5.2-5.2"></path>
+            </svg>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
       </div>
+    </header>
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+      <nav class="nav nav-underline justify-content-between">
+        <a class="nav-item nav-link link-body-emphasis active" href="#">World</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">U.S.</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Technology</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Culture</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Business</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Politics</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Opinion</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Science</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Health</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Style</a>
+        <a class="nav-item nav-link link-body-emphasis" href="#">Travel</a>
+      </nav>
     </div>
-  </nav>
+  </div>
+
     
     <hr>
 
     <!-- Blog Content -->
-    <main>
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+          <p class="lead my-3">Multiple lines of text that form the lead, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+        </div>
+      </div>
         <!-- Section 1 -->
-        <section>
-            <h2>Introduction</h2>
-            <article>
-                <p>
-                    <strong>Welcome</strong> to my blog! In this post, I'll share the incredible story of my time on the <em>Ellen Show</em>, hoping to inspire and motivate you. Blogging is my way of sharing meaningful <em>thoughts</em> and <strong>ideas</strong> with the world.
-                </p>
-                <p class="read-more-content">
-                    <strong>It's incredible to think about</strong>, but when I was granted this amazing opportunity, I was still in highschool grinding away at my <em>football</em> career. This once-in-a-lifetime experience truly opened my eyes and deepened my faith in God. I saw it not just as a blessing, but as a miracle.
-                </p>    
-                <button class="read-more-btn" aria-expanded="false">Read More</button>
-                <img src="Ellen-placeholder.jpg" data-src="../images/Ellen.jpg" alt="Me on the Ellen Show" class="featured-image lazy" loading="lazy">
-            </article>
-        </section>
+       <!-- Section 1 -->
+<section class="mb-5">
+  <h2 class="mb-4">Introduction</h2>
+  <article class="mb-4">
+    <p>
+      <strong>Welcome</strong> to my blog! In this post, I'll share the incredible story of my time on the <em>Ellen Show</em>, hoping to inspire and motivate you. Blogging is my way of sharing meaningful <em>thoughts</em> and <strong>ideas</strong> with the world.
+    </p>
+    <div class="read-more-content">
+      <p>
+        <strong>It's incredible to think about</strong>, but when I was granted this amazing opportunity, I was still in high school grinding away at my <em>football</em> career. This once-in-a-lifetime experience truly opened my eyes and deepened my faith in God. I saw it not just as a blessing, but as a miracle.
+      </p>
+      <img src="Ellen-placeholder.jpg" data-src="../images/Ellen.jpg" alt="Me on the Ellen Show" class="featured-image lazy img-fluid mt-4 w-50" loading="lazy">
+    </div>
+    <button type="button" class="read-more-btn btn btn-primary mt-3" aria-expanded="false">Read More</button>
+  </article>
+</section>
     
 
         <!-- Section 2 -->
-<section>
-    <h2>Featured Content</h2>
-    <article>
-        <p>
-            Want to witness a once-in-a-lifetime moment that went viral? Check out the <strong>life-changing experience</strong> I had on the <em>Ellen Show</em>! From Nashville to Burbank, this journey has inspired thousands, and now, it’s your turn to feel the magic.
-        </p>
-        <p class="read-more-content">
-            From this, I learned that once-in-a-lifetime <strong>experiences</strong> aren't meant to simply pass us by. What I mean is, when you encounter a moment like this, take the time to truly sit with it—soak up every bit of knowledge and growth it offers. Let these moments shape the way you approach life and <em>inspire</em> your journey forward.
-        </p>
-        <button class="read-more-btn">Read More</button>
-        
-        <blockquote>"Success isn't owned, it's leased, and rent is due every day." - J.J Watt</blockquote>
-        <div class="iframe-container">
-            <iframe
-                src="https://www.youtube.com/embed/EOzz48ZHQzw"
-                title="Serial Tipper' Gives Deserving Teen Life-Changing Tip"
-                class="youtube-iframe"
-                allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
+        <section class="mb-5">
+          <h2 class="mb-4">Featured Content</h2>
+          <article class="mb-4">
+            <p>
+              Want to witness a once-in-a-lifetime moment that went viral? Check out the <strong>life-changing experience</strong> I had on the <em>Ellen Show</em>! From Nashville to Burbank, this journey has inspired thousands, and now, it’s your turn to feel the magic.
+            </p>
+            <p class="read-more-content">
+              From this, I learned that once-in-a-lifetime <strong>experiences</strong> aren't meant to simply pass us by. What I mean is, when you encounter a moment like this, take the time to truly sit with it—soak up every bit of knowledge and growth it offers. Let these moments shape the way you approach life and <em>inspire</em> your journey forward.
+            </p>
+            <button class="read-more-btn btn btn-primary mt-3" aria-expanded="false">Read More</button>
+            
+            <blockquote class="blockquote mt-4">"Success isn't owned, it's leased, and rent is due every day." - J.J Watt</blockquote>
+            <div class="ratio ratio-16x9 mt-4">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/EOzz48ZHQzw"
+                  title="Serial Tipper' Gives Deserving Teen Life-Changing Tip"
+                  allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
             <noscript>
-                <p>
-                    If the video doesn’t load, view it directly on 
-                    <a href="https://www.youtube.com/watch?v=EOzz48ZHQzw" target="_blank">YouTube</a>.
-                </p>
+              <p>
+                If the video doesn’t load, view it directly on 
+                <a href="https://www.youtube.com/watch?v=EOzz48ZHQzw" target="_blank">YouTube</a>.
+              </p>
             </noscript>
-        </div>
-    </article>
-</section>
+          </article>
+        </section>
         
     
         <!-- Section 3 -->
-        <section>
-            <h2>Closing Words</h2>
-            <article>
-                <p>Thank you for reading! I hope this post <em>inspired</em> and <strong>motivated</strong> you. Feel free to share your thoughts about my topic in the comments of my social below!</p>
-                <img src="closing-placeholder.jpg" data-src="../images/closing.jpeg" alt="The closing Image" class="featured-image lazy">
-            </article>
+        <section class="mb-5">
+          <h2 class="mb-4">Closing Words</h2>
+          <article class="mb-4">
+            <p>Thank you for reading! I hope this post <em>inspired</em> and <strong>motivated</strong> you. Feel free to share your thoughts about my topic in the comments of my social below!</p>
+            <img src="closing-placeholder.jpg" data-src="../images/closing.jpeg" alt="The closing Image" class="featured-image lazy img-fluid mt-4 w-50" loading="lazy">
+          </article>
         </section>
     </main>
 
     <hr>
-    <footer>
-        <p>&copy; 2024 Lamon Tolbert Jr's Blog. Address: Nashville, TN, 37207</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/lamontolbertjr/" target="_blank" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-              <path d="M4.98 3.5c0 1.38-1.11 2.5-2.49 2.5S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.13 24V7.98H4.8V24H.13zM9.69 7.98h4.31v2.16h.06c.6-1.14 2.07-2.35 4.26-2.35 4.55 0 5.39 2.89 5.39 6.64v7.57h-4.66v-6.7c0-1.6-.03-3.67-2.37-3.67-2.37 0-2.73 1.75-2.73 3.55v6.82H9.69V7.98z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/ljtol05" target="_blank" title="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#00d4ff">
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.299-1.23 3.299-1.23.653 1.653.241 2.873.118 3.176.769.84 1.236 1.911 1.236 3.221 0 4.61-2.803 5.624-5.475 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
-        </div>
-      </footer>
-
- <!-- Scroll to Top Button -->
- <button id="scrollToTopBtn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2l-10 10h6v10h8v-10h6z"/>
-    </svg>
-  </button>
-    
-<script src="../JavaScript/scripts.js"></script>
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>Blog Made By <a href="https://www.linkedin.com/in/lamontolbertjr/">Lamon Tolbert Jr</a></p>
+      <p class="mb-0">
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </div>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+<script src="../JavaScript/scripts.js""></script>
 </body>
 </html>

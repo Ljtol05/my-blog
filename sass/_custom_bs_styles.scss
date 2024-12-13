@@ -2,12 +2,35 @@
 @use './variables' as *;
 
 // Override Bootstrap variables with your custom variables
-$body-bg:$body-bg;
+
 
 // Import Bootstrap's SCSS
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
 
-// Add your custom styles here
+
+.blog-header-logo {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  color: #333; /* Dark text color */
+  text-decoration: none;
+}
+
+.top-2rem {
+  top: .0rem;
+}
+
+.read-more-content {
+  display: none;
+}
+
+.read-more-content.expanded {
+  display: block;
+}
+
+.bg-body {
+  background: linear(to bottom, #1A2980, #26D0CE);
+}
